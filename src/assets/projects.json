@@ -1,0 +1,901 @@
+[
+  {
+    "id": 1,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/01-20220419_Peerspace_BrandVid_Final.mp4"
+      }
+    ],
+    "project_title": "Peerspace Rebrand & Social Growth",
+    "client": "Peerspace",
+    "overview": "Co-led the complete rebrand of Peerspace and developed the go-to-market strategy to launch the new identity. Oversaw ongoing social strategy and content production, resulting in a 56% growth in their social presence within 8 months. The work focused on building a strong visual and narrative framework that connected with their audience across platforms.",
+    "contribution": [
+      "Co-authored and directed the brand refresh strategy",
+      "Led creative and content strategy for social channels",
+      "Oversaw cross-platform execution, blending hero campaigns with ongoing content streams"
+    ],
+    "deliverables": [
+      "Hero brand films and launch video assets",
+      "Social-first content, including TikTok trends, Instagram reels, and LinkedIn campaigns",
+      "Static and motion-based content for recurring social programs"
+    ],
+    "impact": [
+      "Achieved a 56% increase in organic social presence within 8 months",
+      "Strengthened brand perception through cohesive visual storytelling and video-driven campaigns",
+      "Elevated Peerspace's brand recognition in key markets"
+    ],
+    "tags": [
+      "Branding",
+      "Social Strategy",
+      "Video Production",
+      "Motion Design",
+      "Content Marketing",
+      "TikTok",
+      "Instagram",
+      "LinkedIn"
+    ]
+  },
+  {
+    "id": 2,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/02-20210824__Keithcity_Community_BrandVideo.mp4"
+      }
+    ],
+    "project_title": "Community.com Paid & Organic Growth",
+    "client": "Community.com",
+    "overview": "Following Community.com's Series A raise, we were brought on as their outsourced creative team to build and execute a full-stack paid and organic content strategy. Over an 18-month retainer, we led go-to-market strategy on a monthly cadence while managing pre-production for video shoots, post-production with animation, and delivering a constant flow of static and video assets for TikTok, LinkedIn, and Instagram.",
+    "contribution": [
+      "Developed and executed a comprehensive paid and organic content strategy",
+      "Directed pre-production and video shoots, ensuring seamless creative coordination",
+      "Oversaw post-production and animation to create polished, high-performing content"
+    ],
+    "deliverables": [
+      "Static and video content designed for TikTok, LinkedIn, and Instagram",
+      "Monthly go-to-market strategy decks and campaign concepts",
+      "A full suite of creative assets for both paid campaigns and organic social"
+    ],
+    "impact": [
+      "Amplified brand visibility and user engagement across all key social platforms",
+      "Supported Community.com's post-Series A growth through cohesive storytelling and performance-driven creative",
+      "Streamlined production by acting as an end-to-end outsourced creative team"
+    ],
+    "tags": [
+      "Paid Media",
+      "Organic Social",
+      "TikTok",
+      "Instagram",
+      "LinkedIn",
+      "Video Production",
+      "Animation",
+      "Content Strategy",
+      "Go-to-Market"
+    ]
+  },
+  {
+    "id": 3,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/03-Betr_Hero%20Video.mp4"
+      }
+    ],
+    "project_title": "Betr Product Design & Performance Marketing",
+    "client": "Betr (Sports Betting & Fantasy Startup)",
+    "overview": "At Betr, I worked across both product design and marketing creative, ensuring a seamless connection between the in-app experience, go-to-market campaigns, and paid social performance. My role focused on optimizing user flows, onboarding, and wallet features while leading the creation of high-performing paid and organic content. This dual approach not only strengthened brand and product alignment but also contributed directly to user acquisition and retention ahead of key funding milestones.",
+    "contribution": [
+      "Led product design improvements across onboarding, wallet flow, and in-app user experience",
+      "Directed creative for paid marketing and organic social campaigns, including TikTok, Instagram, and Twitter",
+      "Collaborated with leadership on go-to-market strategy and investor-facing creative tied to fundraising"
+    ],
+    "deliverables": [
+      "Product design systems for mobile and web",
+      "High-performing paid ad campaigns and creative assets",
+      "Organic content and motion design for social growth and user engagement",
+      "Go-to-market materials that supported fundraising milestones and Series A positioning"
+    ],
+    "impact": [
+      "Improved first-bet conversion and day-one retention through product flow optimization",
+      "Strengthened brand visibility and acquisition with data-driven paid creative",
+      "Supported funding efforts with strategic creative and product design alignment"
+    ],
+    "tags": [
+      "Product Design",
+      "UX/UI",
+      "Paid Marketing",
+      "Organic Social",
+      "Motion Design",
+      "Go-to-Market",
+      "Performance Creative"
+    ]
+  },
+  {
+    "id": 4,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/5xV78MMMlf3gkR3aeIzUCu/ETERNA---For-Portfolio?embed-host=share"
+      }
+    ],
+    "project_title": "Eterna Brand & Custom Shopify Build",
+    "client": "Eterna (Direct-to-Consumer Wellness Brand)",
+    "overview": "We led Eterna's brand from concept to delivery, creating a complete visual identity and e‑commerce experience. Our work included designing all brand packaging, diecuts, and physical product presentation, as well as developing a custom Shopify storefront with both front-end UI and backend functionality. The goal was to build a premium DTC platform that felt refined, trustworthy, and conversion-driven.",
+    "contribution": [
+      "Developed the full brand identity and packaging system, including diecuts and product design",
+      "Designed and built a custom Shopify front-end and integrated backend systems (subscriptions, product variants, CMS)",
+      "Directed art, UX, and photography to ensure cohesive storytelling across digital and physical touchpoints"
+    ],
+    "deliverables": [
+      "Brand guidelines, packaging, and printed collateral",
+      "Custom Shopify site: homepage, product pages, subscription flows, and backend integrations",
+      "UX wireframes, high-fidelity UI design, and mobile-first site optimization",
+      "Art direction and content styling for on-site imagery and visuals"
+    ],
+    "impact": [
+      "Delivered a fully realized brand from packaging to digital experience",
+      "Built a premium e‑commerce platform that increased trust and improved conversion paths",
+      "Streamlined subscription workflows and backend management for scalability"
+    ],
+    "tags": [
+      "Brand Identity",
+      "Packaging Design",
+      "Diecuts",
+      "Custom Shopify",
+      "E‑commerce UX",
+      "Art Direction",
+      "Mobile-first Design"
+    ]
+  },
+  {
+    "id": 5,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/a3JZmOXS0tyiDnTB69PG8t/Untitled?node-id=0-1&embed-host=share"
+      }
+    ],
+    "project_title": "Dorado Crypto‑Native IRA Platform UX & Brand",
+    "client": "Dorado (Miami‑based crypto‑native IRA startup)",
+    "overview": "We helped Dorado, a Miami‑based startup building the U.S.'s first crypto-native IRA platform, by leading front‑end UX architecture, wireframing, and brand development. Our goal was to design with clarity and confidence—so users could navigate the complex world of crypto investments within an IRA setting.",
+    "contribution": [
+      "Crafted UX wireframes and full screen flows for onboarding, trading, staking, and retirement setup",
+      "Designed front‑end architecture to balance usability and backend needs",
+      "Developed brand identity, visual system, typography, and UI style for consistency"
+    ],
+    "deliverables": [
+      "Full screen wireframes for web platform",
+      "High-fidelity UI designs and interaction specs",
+      "Brand assets: logo, color palette, typography, iconography, UI components",
+      "Front‑end-ready design files aligned with engineering frameworks"
+    ],
+    "impact": [
+      "Established a clear, trust-focused user journey for complex IRA functionality",
+      "Created a cohesive, branded experience that balanced fintech credibility with crypto growth",
+      "Enabled smoother handoff to engineers with structured deliverables and modular components"
+    ],
+    "tags": [
+      "UX Architecture",
+      "Wireframing",
+      "Front-End Design",
+      "Brand Identity",
+      "Fintech UX",
+      "Crypto IRA",
+      "UI Systems"
+    ]
+  },
+  {
+    "id": 6,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/07-DeUna__Hero%20Video.mp4"
+      }
+    ],
+    "project_title": "Deuna • Branded Hero Animation",
+    "client": "Deuna (LatAm fintech – one‑click checkout platform)",
+    "overview": "We created the branded hero video for Deuna's go-to-market product launch, focusing on animation and motion storytelling to drive attention and awareness. Following their brand guidelines, we designed a narrative that highlighted the speed and simplicity of their one-click checkout system, helping to generate significant early traction and visibility for the product.",
+    "contribution": [
+      "Concepted and storyboarded the hero video for the product launch",
+      "Designed and animated the video, aligning with Deuna's brand voice and guidelines",
+      "Collaborated with Deuna's internal team to ensure message clarity and visual consistency"
+    ],
+    "deliverables": [
+      "Hero product launch animation (20–30 sec)",
+      "Social adaptations for platforms including Instagram, LinkedIn, and TikTok"
+    ],
+    "impact": [
+      "Helped drive brand awareness and attention during launch",
+      "Positioned Deuna as a modern, trusted fintech brand in the LatAm market",
+      "Delivered a cohesive visual narrative for both web and social channels"
+    ],
+    "tags": [
+      "Go-to-Market",
+      "Hero Video",
+      "Animation",
+      "Product Launch",
+      "Brand Storytelling",
+      "Motion Design",
+      "Fintech"
+    ]
+  },
+  {
+    "id": 7,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/08-Dutchie__Dutchie%20Pay.mp4"
+      }
+    ],
+    "project_title": "Dutchie – Hero Launch Video",
+    "client": "Dutchie",
+    "overview": "We collaborated with Dutchie to produce a hero video that captured the brand's essence and supported its market presence in the cannabis tech space. The project focused on crafting a sleek, modern narrative to highlight Dutchie's innovative approach and its seamless platform experience.",
+    "contribution": [
+      "Led concept development and visual storytelling for the hero video",
+      "Directed animation and motion graphics to align with Dutchie's established brand guidelines",
+      "Oversaw post-production to ensure a polished, high-impact final asset"
+    ],
+    "deliverables": [
+      "A hero video designed for multi-platform use (social and web)",
+      "Custom motion graphics and animations",
+      "A visual narrative highlighting the brand's core value propositions"
+    ],
+    "impact": [
+      "Elevated Dutchie's digital presence with a high-quality visual centerpiece",
+      "Created content that supported product awareness and engagement during key campaigns"
+    ],
+    "tags": [
+      "Motion Design",
+      "Animation",
+      "Brand Video",
+      "Storytelling",
+      "Visual Direction",
+      "Post-Production"
+    ]
+  },
+  {
+    "id": 8,
+    "tag": "brand",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/08-20210820__R5_Amway_VitaminD.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/08-20210823_Keithcity_Amway_Sleep.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/08-Amway%20Hero%20Video__Stress.mp4"
+      }
+    ],
+    "project_title": "Amway • Motion Campaign Videos",
+    "client": "Amway",
+    "overview": "We produced a series of motion videos for Amway, focusing on several of their product lines. The work involved creating dynamic animation-driven storytelling that highlighted product benefits and features, all while staying consistent with Amway's global brand guidelines. These assets were designed for use across social media, internal marketing, and digital campaigns.",
+    "contribution": [
+      "Concepted and storyboarded motion video campaigns for multiple product lines",
+      "Designed and animated all video elements, including transitions, product highlights, and branded visuals",
+      "Ensured all creative assets aligned with Amway's global style and tone"
+    ],
+    "deliverables": [
+      "A suite of animated videos for social and digital campaigns",
+      "Cutdowns and optimized variations for platforms like Instagram, TikTok, and LinkedIn",
+      "Visual templates for scaling future motion campaigns"
+    ],
+    "impact": [
+      "Elevated the digital presence of Amway's product lines through clean, engaging animation",
+      "Supported brand consistency across global markets with cohesive motion design",
+      "Increased content flexibility with reusable motion templates and variations"
+    ],
+    "tags": [
+      "Motion Design",
+      "Animation",
+      "Social Video",
+      "Product Marketing",
+      "Brand Storytelling",
+      "Digital Campaigns"
+    ]
+  },
+  {
+    "id": 9,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "FIGMA_URL_TO_BE_ADDED"
+      }
+    ],
+    "project_title": "Betr • Product Design & Social Dynamics",
+    "client": "Betr (Sports Betting & Fantasy Startup)",
+    "overview": "At Betr, I worked across product design, user journey mapping, and onboarding flow optimization while also shaping the social dynamics of the platform. I collaborated closely with the product and engineering teams to ensure that every branded element, from in-app visuals to custom iconography, reflected the brand's identity and performance goals. My role blended UX strategy with visual design to create an intuitive, engaging user experience.",
+    "contribution": [
+      "Designed and refined user journeys, from sign-up to first bet and retention",
+      "Built and optimized onboarding flows to reduce friction and improve conversion",
+      "Explored and implemented branded app elements, including custom iconography and UI components",
+      "Supported the design system and interaction patterns to ensure consistency across features"
+    ],
+    "deliverables": [
+      "Complete Figma file of app flows, wireframes, and UI designs (to be embedded)",
+      "Custom icon sets and branded visual elements",
+      "User journey maps and annotated onboarding screens",
+      "Collaboration with marketing for in-app moments and dynamic social features"
+    ],
+    "impact": [
+      "Improved onboarding conversion and user retention with data-backed design iterations",
+      "Created a cohesive visual and interaction language across the app",
+      "Enhanced the platform's social features to boost engagement"
+    ],
+    "tags": [
+      "Product Design",
+      "UX/UI",
+      "User Journey",
+      "Onboarding Flows",
+      "Custom Icon Design",
+      "Design Systems",
+      "Figma"
+    ]
+  },
+  {
+    "id": 10,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/x2fNy5ppY4YfR8JvdArf7L/Potion---For-Portfolio?node-id=0-1&embed-host=share"
+      }
+    ],
+    "project_title": "Potion • Front-End Design for Freelance CRM",
+    "client": "Potion (Freelance CRM platform empowering creatives)",
+    "overview": "Potion is a CRM platform tailored to freelance creatives, helping streamline client outreach, project workflows, and video prospecting through AI-driven personalization. I led the full front-end UX and visual experience—from initial wireframes to final hi-fi designs—shaping the user energy and interaction flows to feel intuitive, polished, and true to their brand identity.",
+    "contribution": [
+      "Designed UX flows, wireframes, and high-fidelity mockups for core features including onboarding, dashboard views, client outreach tools, and video personalization interfaces",
+      "Crafted a branded UI kit featuring buttons, cards, modals, and micro‑interactions to reflect Potion's bold, creative positioning",
+      "Provided detailed interaction specs and documentation to support a seamless handoff to engineering"
+    ],
+    "deliverables": [
+      "Full set of UX wireframes and polished screens across key user flows",
+      "Branded UI component library and interactive standards",
+      "Developer-ready design files with annotations for interactivity and responsive behavior"
+    ],
+    "impact": [
+      "Created a cohesive front-end design tailored to how freelance creatives work and sell",
+      "Captured Potion's creative energy through visual and interactive consistency",
+      "Enabled scalable future updates with a structured approach to design and documentation"
+    ],
+    "tags": [
+      "Product Design",
+      "UX/UI",
+      "Wireframing",
+      "Front-End Design",
+      "Interaction Design",
+      "CRM",
+      "Freelance",
+      "AI Personalization"
+    ]
+  },
+  {
+    "id": 11,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/iDc4N9Gtq620XtMzJSbiOk/SAAS-PROJECT---External?node-id=3901-12774&embed-host=share"
+      }
+    ],
+    "project_title": "Ascend • CRM Platform and Backend Development",
+    "client": "Ascend (Private Label Press Acquisition Platform)",
+    "overview": "Ascend is a platform that allows businesses and individuals to purchase a la carte press placements. We were brought in to design and build the entire backend of their portal, focusing on creating a seamless and intuitive experience for both internal teams and users. This included deep research into user flows, iterative feedback implementation, and designing a system optimized for scalability and ease of management.",
+    "contribution": [
+      "Led backend architecture and UX design for the platform's admin and client dashboards",
+      "Conducted user flow research and incorporated feedback loops to refine usability",
+      "Designed all interface components and logic for content submission, tracking, and fulfillment"
+    ],
+    "deliverables": [
+      "Full backend portal design, including user and admin dashboards",
+      "Wireframes, user journeys, and interactive prototypes",
+      "Scalable backend structure aligned with Ascend's press acquisition model"
+    ],
+    "impact": [
+      "Streamlined the press placement process with an intuitive, self-service backend",
+      "Improved operational efficiency for internal teams managing client campaigns",
+      "Delivered a robust, scalable platform that supports future expansion"
+    ],
+    "tags": [
+      "CRM Design",
+      "Backend Architecture",
+      "UX Research",
+      "Wireframing",
+      "Admin Dashboards",
+      "SaaS Platform"
+    ]
+  },
+  {
+    "id": 12,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/BB0iFPjcesunPWnJzZiyJH/Untitled?node-id=0-1&embed-host=share"
+      }
+    ],
+    "project_title": "Voomio • Multichain NFT Marketplace Design",
+    "client": "Voomio (Multichain NFT marketplace)",
+    "overview": "Voomio is a multichain NFT marketplace designed to simplify NFT discovery and trading across multiple blockchains. We led the entire front-end design journey, bringing structure to new territory during the platform's two-year development cycle. Given the novelty of cross-chain NFT experiences at the time, this was a rigorous, iterative process that combined UX work, brand identity, interaction design, and highly detailed wireframing to shape a future-ready product.",
+    "contribution": [
+      "Led UX flow design, screen wireframes, and high-fidelity UI for multi-curve components (minting, discovery, commerce)",
+      "Defined and refined front-end architecture to handle multichain detail without compromising user simplicity",
+      "Developed brand identity and UI aesthetics tailored to a novel NFT ecosystem",
+      "Continued two-year iteration cycles based on live testing, feedback, and evolving cross-chain functionality"
+    ],
+    "deliverables": [
+      "Wireframes, flows, and interaction specs for multi-chain NFT experiences",
+      "High-fidelity UI libraries aligned with brand system and responsive across devices",
+      "Brand identity and typography package suited for web3 positioning",
+      "Front-end design files and documentation for developers"
+    ],
+    "impact": [
+      "Built a scalable front-end framework for an emerging multichain marketplace",
+      "Aligned design with blockchain complexity while maintaining clarity and usability",
+      "Supported a two-year product roadmap through disciplined iteration and feedback loops"
+    ],
+    "tags": [
+      "Multichain",
+      "NFT Marketplace",
+      "UX Architecture",
+      "Front-End Design",
+      "Brand Identity",
+      "Web3",
+      "Interaction Design",
+      "Iterative Process"
+    ]
+  },
+  {
+    "id": 13,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/13-The%20Merge%20is%20Here%20Ethereum%2C%20Evolved.%20-%20Consensys%20%281080p%2C%20h264%2C%20youtube%29.mp4"
+      }
+    ],
+    "project_title": "Ethereum Merge • ConsenSys NFT Launch & Animation",
+    "client": "ConsenSys (Ethereum Protocol & Developer Platform)",
+    "overview": "To commemorate the Ethereum Merge, ConsenSys led what became one of the largest NFT drops in history—the Regenesis collection—and I was part of the go‑to‑market team handling strategy, design, and animation. Our work was featured in The Wall Street Journal and recognized by MUSE Creative Awards. We also created a one‑of‑one NFT that minted on the first block of the new proof‑of‑stake chain.",
+    "contribution": [
+      "Developed NFT design strategy and marketing campaign plan",
+      "Created and animated NFTs across open and limited editions—including the unique first‑block mint",
+      "Coordinated launch logistics and execution across platforms and formats"
+    ],
+    "deliverables": [
+      "Animated NFT assets for Regenesis collection",
+      "Open edition + limited edition + one-of-one animations",
+      "Campaign materials including motion teasers and social clips"
+    ],
+    "impact": [
+      "Delivered one of the largest NFT drops ever with mass global visibility",
+      "Secured mainstream media recognition (Wall Street Journal, Decrypt) for the campaign",
+      "Produced the first sustainable, proof-of-stake minted NFT, signalling Ethereum's new era"
+    ],
+    "tags": [
+      "NFT Launch",
+      "Animation",
+      "Metaverse Strategy",
+      "Web3",
+      "Motion Design",
+      "Ethereum Merge",
+      "First-Block NFT",
+      "MUSE Award"
+    ]
+  },
+  {
+    "id": 14,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/14-NFT2__Beta.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/14-NFT3__Gamma.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/14-NFT4__Delta.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/14-NFT5__Omega.mp4"
+      }
+    ],
+    "project_title": "Linea • Scavenger Hunt NFT Launch Strategy & Design",
+    "client": "ConsenSys (Linea Layer‑2 Blockchain)",
+    "overview": "Ahead of the Linea L2 launch, ConsenSys rolled out a scavenger hunt NFT campaign to build awareness and community engagement. I led the end-to-end go-to-market strategy, creative design, and execution of the launch. This included concepting a multi-step interactive hunt, branding the NFT rewards, and developing motion assets and marketing campaigns that guided users through the experience.",
+    "contribution": [
+      "Designed the scavenger hunt narrative and user flow, creating tiered NFT rewards tied to community engagement",
+      "Developed campaign branding, NFT graphics, and animation assets for edition drops",
+      "Coordinated multi-channel launch strategy—including interactive clues, socials, and platform integration",
+      "Worked seamlessly within the ConsenSys infrastructure team to align design, web logic, and launch sequencing"
+    ],
+    "deliverables": [
+      "Full campaign strategy detailing hunt steps, reward tiers, and UX flows",
+      "Branded NFT artwork and animated reveal sequences for each edition",
+      "Supporting assets including teaser videos, social posts, and campaign UI prompts"
+    ],
+    "impact": [
+      "Drove active user participation across the Linea ecosystem through a structured, interactive campaign",
+      "Elevated community engagement and anticipation leading into L2 mainnet launch",
+      "Demonstrated how layered storytelling and game mechanics can build buzz and brand loyalty around a blockchain rollout"
+    ],
+    "tags": [
+      "NFT Scavenger Hunt",
+      "L2 Launch",
+      "Campaign Strategy",
+      "Animation",
+      "Web3 UX",
+      "Brand Engagement",
+      "ConsenSys",
+      "Linea"
+    ]
+  },
+  {
+    "id": 15,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-1F37C334-5F72-4ABA-8236-2081B692CE5E_1_105_c.jpeg"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-20210408__R4__BOMBAY%20BILL%20NYE%20-%20SCRIPT_01_FINAL.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-20210429_R3_Bombay%20x%20Bill%20Nye__Script_03.mp4"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-5828F6A3-479C-4DF5-89C8-06BCA65732C6_4_5005_c.jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-5828F6A3-479C-4DF5-89C8-06BCA65732C6_4_5005_c.jpeg"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-Bill%20Nye%20-%20bombay.mov"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-D937DA19-E0C3-425A-867D-F338128AB564_4_5005_c.jpeg"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/15-F76FAFF0-0533-4C97-A434-B20EEE4D9490_4_5005_c.jpeg"
+      }
+    ],
+    "project_title": "Bill Nye • Bombay Sapphire Science Series",
+    "client": "Bombay Sapphire (Bacardi-owned RTD cocktail line)",
+    "overview": "We led the end-to-end creative execution of the Bill Nye x Bombay Sapphire campaign—a three-part video series where Bill Nye explains the science behind gin and tonics. This campaign supported the brand's RTD cocktail launch and blended educational storytelling with entertainment. It gained attention from outlets like Marketing Dive and Forbes for its smart fusion of science and brand narrative.",
+    "contribution": [
+      "Developed the full creative strategy, scripting, and storyboarding for the series",
+      "Directed, produced, shot, and edited all hero videos with Bill Nye",
+      "Oversaw post-production including animation, motion graphics, color correction, and pacing",
+      "Packaged all deliverables for multi-platform use, including social cutdowns and TV spots"
+    ],
+    "deliverables": [
+      "Three hero explainer videos (30–60 seconds)",
+      "Social-first cutdowns for Instagram, TikTok, and LinkedIn",
+      "Broadcast-ready TV spots and accompanying motion graphics",
+      "Branded packaging of all creative assets for distribution"
+    ],
+    "impact": [
+      "Helped position Bombay Sapphire as a forward-thinking, science-inspired brand while driving awareness of its RTD product line",
+      "Increased social engagement with content that blended science and entertainment, appealing to millennials and nostalgic Bill Nye fans",
+      "Provided a cohesive suite of deliverables adaptable for both digital and traditional media"
+    ],
+    "tags": [
+      "Video Production",
+      "TV Spots",
+      "Motion Design",
+      "Campaign Strategy",
+      "Science Marketing",
+      "Social Content",
+      "RTD Launch"
+    ]
+  },
+  {
+    "id": 16,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/16-Bill%20Nye__Chipotle_%20Foodprint.mp4"
+      }
+    ],
+    "project_title": "Bill Nye • Chipotle \"Real Foodprint\" Explainer Video",
+    "client": "Chipotle Mexican Grill",
+    "overview": "We produced a motion driven explainer video featuring Bill Nye that showcased Chipotle's new \"Real Foodprint\" sustainability tracker, a tool that surfaces the environmental impact of each order. The video was created for TikTok, Instagram, and their digital platforms, bringing data to life through Bill Nye's engaging, science forward delivery. This campaign combined brand storytelling with environmental transparency and audience activation.",
+    "contribution": [
+      "Crafted the video concept, scripting, and storyboard to highlight five sustainability metrics in an easy to understand format",
+      "Directed and produced a full shoot with Bill Nye, overseeing creative setup and on camera performance",
+      "Led post production including animation, motion graphics, pacing, and packaging for various formats such as TikTok, Instagram, and in app platforms"
+    ],
+    "deliverables": [
+      "A 15 to 30 second explainer video featuring Bill Nye",
+      "Social optimized cutdowns for TikTok, Instagram, and app integration",
+      "Motion overlays and data visual assets based on the Real Foodprint framework"
+    ],
+    "impact": [
+      "Reinforced Chipotle's commitment to transparency and sustainability through engaging, science led storytelling",
+      "Positioned the brand at the intersection of food, data, and purpose while appealing to Gen Z and environmentally conscious audiences",
+      "Brought complex environmental data to life through motion design and personality driven narrative"
+    ],
+    "tags": [
+      "Motion Design",
+      "Sustainability Storytelling",
+      "Video Production",
+      "Science Communication",
+      "Social Content",
+      "Brand Transparency"
+    ]
+  },
+  {
+    "id": 17,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/17-Frame%207.png"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/17-Frame%208.png"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/17-Frame%209.png"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/17-Frame%2010.png"
+      }
+    ],
+    "project_title": "Casa Blanca • Go to Market Social and Paid Launch",
+    "client": "Casa Blanca (luxury real estate app for buyers and renters)",
+    "overview": "Casa Blanca is a luxury real estate app built on swipe style matchmaking and cash back incentives, positioned as a high end alternative to traditional brokerage platforms. We led the go to market launch on social and paid channels, overseeing concept, photography, planning, pre production, production, and final delivery.",
+    "contribution": [
+      "Crafted launch strategy tailored to upscale and savvy homebuyers",
+      "Directed concept, produced photo shoots, and planned all pre production",
+      "Managed full execution from shoot day through delivery of final assets"
+    ],
+    "deliverables": [
+      "Hero content and photography for paid launch campaigns",
+      "Social first cutdowns and visuals optimized for Instagram, LinkedIn, Facebook"
+    ],
+    "impact": [
+      "Delivered high quality branded content aligned with Casa Blanca's luxury positioning",
+      "Supported early traction in competitive markets by elevating online presence"
+    ],
+    "tags": [
+      "Launch Campaign",
+      "Paid Media",
+      "Organic Social",
+      "Photography Production",
+      "Go to Market",
+      "Real Estate Tech"
+    ]
+  },
+  {
+    "id": 18,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/18-Frame%2011.png"
+      },
+      {
+        "type": "image",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/18-Frame%2012.png"
+      }
+    ],
+    "project_title": "The New Yorker – Tote Campaign",
+    "client": "The New Yorker",
+    "overview": "For The New Yorker tote campaign, we created a personable and relatable series of ads that outperformed existing creative. Our approach involved storyboarding, directing, shooting, and executing a full content strategy across multiple formats. By refining both the visual storytelling and copy, we drove strong engagement and conversions.",
+    "contribution": [
+      "Led end-to-end creative direction including concepting, copy strategy, and execution",
+      "Directed and produced all photography and video assets",
+      "Crafted a narrative designed to resonate with audiences on social platforms"
+    ],
+    "deliverables": [
+      "Static photography and short-form video assets tailored for social platforms",
+      "Multiple ad variations including GIFs, walking lifestyle shots, and hero product imagery",
+      "Strategy and creative for messaging and copywriting"
+    ],
+    "impact": [
+      "4,762 subscriptions from the highest performing variation with a CVR of 3.96%",
+      "Average click-through rate (CTR) improvements compared to legacy creative",
+      "Strengthened brand relatability by combining lifestyle content with simple, clear value propositions"
+    ],
+    "tags": [
+      "Brand Campaign",
+      "Social Strategy",
+      "Photography",
+      "Video Production",
+      "Creative Direction",
+      "Copywriting"
+    ]
+  },
+  {
+    "id": 19,
+    "tag": "strategy",
+    "asssets": [
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/19-Copy%20of%2020210318__R4__Community%20Connects__Bev.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/19-Copy%20of%2020210408__R5__CC%20-%20Stay%20Cool.mp4"
+      },
+      {
+        "type": "video",
+        "url": "https://rueynivjoyctbowy.public.blob.vercel-storage.com/19-Copy%20of%20R2__UNWRP__COMMUNITY.mp4"
+      }
+    ],
+    "project_title": "Community.com – Community Connects Series",
+    "client": "Community.com",
+    "overview": "Over an 18-month retainer, we led the full creative strategy, production, and execution for Community.com's flagship content initiative, Community Connects. We created the series concept, developed the name, and built a go-to-market strategy that highlighted how people, vendors, and brands use the platform. We managed every aspect of content production — from storyboarding and shooting to editing, motion design, and packaging deliverables for multi-platform distribution.",
+    "contribution": [
+      "Developed and named Community Connects, defining its tone and purpose",
+      "Designed and executed the content strategy for both paid and organic channels",
+      "Oversaw pre-production, filming, editing, and animation of all content",
+      "Led the brand transition by aligning creative to Community.com's evolving identity"
+    ],
+    "deliverables": [
+      "Monthly video episodes and social-first static assets for TikTok, Instagram, and LinkedIn",
+      "Paid media creatives tailored to maximize engagement and conversion",
+      "Brand storytelling packages designed for both awareness and user education"
+    ],
+    "impact": [
+      "Grew Community.com's social presence by nearly 400% from its seed round baseline",
+      "Positioned the brand as a thought leader through strategic storytelling and content marketing",
+      "Successfully transitioned the brand identity to resonate with a larger, more diverse audience"
+    ],
+    "tags": [
+      "Brand Strategy",
+      "Content Production",
+      "Social Growth",
+      "Motion Design",
+      "Paid Media",
+      "Video Production",
+      "Storyboarding",
+      "Creative Direction"
+    ]
+  },
+  {
+    "id": 20,
+    "tag": "go-to-market",
+    "asssets": [
+      {
+        "type": "drive",
+        "url": "https://drive.google.com/drive/folders/1mXucvg1wrv9IScUkRmA4NxKyLP-BU-G1?usp=drive_link"
+      }
+    ],
+    "project_title": "Liquid I.V. – Kids Launch and New Flavors Campaign",
+    "client": "Liquid I.V.",
+    "overview": "We partnered with Liquid I.V. to lead the creative strategy and execution for the launch of Liquid I.V. Kids, along with a social-first campaign introducing new product flavors. Over a 6-week rollout, we developed a content strategy focused on storytelling and product education, producing high-quality visuals designed to engage audiences across TikTok, Instagram, and other digital channels.",
+    "contribution": [
+      "Led all creative concepting and storyboarding to define the campaign's narrative",
+      "Oversaw end-to-end production, including pre-production planning, filming, and animation",
+      "Directed the visual style and tone to highlight the brand's fun, family-friendly positioning"
+    ],
+    "deliverables": [
+      "Social-first content packages (video and static) optimized for TikTok and Instagram",
+      "Animated product highlights and flavor spotlights",
+      "Hero campaign videos for launch announcements and brand storytelling"
+    ],
+    "impact": [
+      "Delivered a cohesive, multi-platform creative rollout that amplified brand visibility",
+      "Helped drive early awareness and excitement for Liquid I.V. Kids and new flavors",
+      "Strengthened the brand's social presence with high-performing creative assets"
+    ],
+    "tags": [
+      "Content Strategy",
+      "Campaign Rollout",
+      "Motion Design",
+      "Social Media",
+      "Product Launch",
+      "Storyboarding",
+      "Creative Direction",
+      "Video Production"
+    ]
+  },
+  {
+    "id": 21,
+    "tag": "go-to-market",
+    "asssets": [
+      {
+        "type": "drive",
+        "url": "https://drive.google.com/drive/folders/19gr7xpD_wyb6SwMYUAq6m_4IoozSMO3M?usp=drive_link"
+      }
+    ],
+    "project_title": "Ethereum Merge • ConsenSys NFT Launch & Animation",
+    "client": "ConsenSys (Ethereum Protocol & Developer Platform)",
+    "overview": "To commemorate the Ethereum Merge, ConsenSys led what became one of the largest NFT drops in history—the Regenesis collection—and I was part of the go‑to‑market team handling strategy, design, and animation. Our work was featured in The Wall Street Journal and recognized by MUSE Creative Awards. We also created a one‑of‑one NFT that minted on the first block of the new proof‑of‑stake chain.",
+    "contribution": [
+      "Developed NFT design strategy and marketing campaign plan",
+      "Created and animated NFTs across open and limited editions—including the unique first‑block mint",
+      "Coordinated launch logistics and execution across platforms and formats"
+    ],
+    "deliverables": [
+      "Animated NFT assets for Regenesis collection",
+      "Open edition + limited edition + one-of-one animations",
+      "Campaign materials including motion teasers and social clips"
+    ],
+    "impact": [
+      "Delivered one of the largest NFT drops ever with mass global visibility",
+      "Secured mainstream media recognition (Wall Street Journal, Decrypt) for the campaign",
+      "Produced the first sustainable, proof-of-stake minted NFT, signalling Ethereum's new era"
+    ],
+    "tags": [
+      "NFT Launch",
+      "Animation",
+      "Metaverse Strategy",
+      "Web3",
+      "Motion Design",
+      "Ethereum Merge",
+      "First-Block NFT",
+      "MUSE Award"
+    ]
+  },
+  {
+    "id": 22,
+    "tag": "go-to-market",
+    "asssets": [
+      {
+        "type": "drive",
+        "url": "https://drive.google.com/drive/folders/18WfKkd6DKwW6ehdUUAud1mAZJq7TjOpr?usp=drive_link"
+      }
+    ],
+    "project_title": "Linea • Scavenger Hunt NFT Launch Strategy & Design",
+    "client": "ConsenSys (Linea Layer‑2 Blockchain)",
+    "overview": "Ahead of the Linea L2 launch, ConsenSys rolled out a scavenger hunt NFT campaign to build awareness and community engagement. I led the end-to-end go-to-market strategy, creative design, and execution of the launch. This included concepting a multi-step interactive hunt, branding the NFT rewards, and developing motion assets and marketing campaigns that guided users through the experience.",
+    "contribution": [
+      "Designed the scavenger hunt narrative and user flow, creating tiered NFT rewards tied to community engagement",
+      "Developed campaign branding, NFT graphics, and animation assets for edition drops",
+      "Coordinated multi-channel launch strategy—including interactive clues, socials, and platform integration",
+      "Worked seamlessly within the ConsenSys infrastructure team to align design, web logic, and launch sequencing"
+    ],
+    "deliverables": [
+      "Full campaign strategy detailing hunt steps, reward tiers, and UX flows",
+      "Branded NFT artwork and animated reveal sequences for each edition",
+      "Supporting assets including teaser videos, social posts, and campaign UI prompts"
+    ],
+    "impact": [
+      "Drove active user participation across the Linea ecosystem through a structured, interactive campaign",
+      "Elevated community engagement and anticipation leading into L2 mainnet launch",
+      "Demonstrated how layered storytelling and game mechanics can build buzz and brand loyalty around a blockchain rollout"
+    ],
+    "tags": [
+      "NFT Scavenger Hunt",
+      "L2 Launch",
+      "Campaign Strategy",
+      "Animation",
+      "Web3 UX",
+      "Brand Engagement",
+      "ConsenSys",
+      "Linea"
+    ]
+  }
+]
