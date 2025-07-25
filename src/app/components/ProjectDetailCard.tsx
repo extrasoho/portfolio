@@ -56,6 +56,9 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             width={800}
             height={600}
             className="h-auto w-full rounded-lg"
+            draggable={false}
+            onDragStart={(e) => e.preventDefault()}
+            style={{ userSelect: "none" }}
           />
         );
       } else if (asset.type === "figma") {
@@ -71,9 +74,47 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
       return null;
     };
 
+    const handleDragEnd = (
+      event: MouseEvent | TouchEvent | PointerEvent,
+      {
+        offset,
+        velocity,
+      }: {
+        offset: { x: number; y: number };
+        velocity: { x: number; y: number };
+      }
+    ) => {
+      const swipeThreshold = 50;
+      const swipeVelocityThreshold = 500;
+
+      if (offset.x > swipeThreshold || velocity.x > swipeVelocityThreshold) {
+        // Swiped right - go to previous
+        handlePrevious();
+      } else if (
+        offset.x < -swipeThreshold ||
+        velocity.x < -swipeVelocityThreshold
+      ) {
+        // Swiped left - go to next
+        handleNext();
+      }
+    };
+
     return (
-      <div className="relative">
-        {renderCurrentAsset()}
+      <div className="relative overflow-hidden rounded-lg">
+        <motion.div
+          drag={hasMultipleAssets ? "x" : false}
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={0.2}
+          onDragEnd={handleDragEnd}
+          whileDrag={{ scale: 0.95 }}
+          className="cursor-grab select-none active:cursor-grabbing"
+          style={{
+            touchAction: hasMultipleAssets ? "pan-y" : "auto",
+            pointerEvents: "auto",
+          }}
+        >
+          {renderCurrentAsset()}
+        </motion.div>
 
         {/* Navigation buttons - only show if multiple assets */}
         {hasMultipleAssets && (
