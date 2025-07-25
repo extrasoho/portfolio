@@ -34,7 +34,7 @@ const PressCard: React.FC = () => {
             }
           >
             <Image
-              src="https://framerusercontent.com/images/IM3obMPeYuF6cPxRuyKaDF0jC0.svg"
+              src="/icons/adweek.svg"
               alt="Adweek"
               width={73}
               height={22}
@@ -55,7 +55,7 @@ const PressCard: React.FC = () => {
             }
           >
             <Image
-              src="https://framerusercontent.com/images/bgaPYPZaE9kWxwgZMTSR479tHJs.svg"
+              src="/icons/deadline.svg"
               alt="Deadline"
               width={90}
               height={9}
@@ -72,7 +72,7 @@ const PressCard: React.FC = () => {
             }
           >
             <Image
-              src="https://framerusercontent.com/images/uTBHAO3GnIDS92tifMfg7JjdA5U.svg"
+              src="/icons/adage.svg"
               alt="Adage"
               width={76}
               height={26}
