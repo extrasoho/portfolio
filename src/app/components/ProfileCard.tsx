@@ -7,8 +7,7 @@ import { Button } from "@/components/ui/button";
 const AVATAR_URL =
   "https://framerusercontent.com/images/h4yrqkRp6ih6BZPFsW14dvuuUY.jpg";
 const LINKEDIN_URL = "https://www.linkedin.com/in/corpusalejandro/";
-const LINKEDIN_ICON =
-  "https://framerusercontent.com/images/v1oDmx8nFhj76TRSggWAfeLPzFs.svg";
+const LINKEDIN_ICON = "/icons/linkedin.svg";
 
 export default function ProfileCard() {
   return (
