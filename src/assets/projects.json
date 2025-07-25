@@ -307,159 +307,6 @@
   },
   {
     "id": 9,
-    "tag": "ux/ui",
-    "asssets": [
-      {
-        "type": "figma",
-        "url": "FIGMA_URL_TO_BE_ADDED"
-      }
-    ],
-    "project_title": "Betr • Product Design & Social Dynamics",
-    "client": "Betr (Sports Betting & Fantasy Startup)",
-    "overview": "At Betr, I worked across product design, user journey mapping, and onboarding flow optimization while also shaping the social dynamics of the platform. I collaborated closely with the product and engineering teams to ensure that every branded element, from in-app visuals to custom iconography, reflected the brand's identity and performance goals. My role blended UX strategy with visual design to create an intuitive, engaging user experience.",
-    "contribution": [
-      "Designed and refined user journeys, from sign-up to first bet and retention",
-      "Built and optimized onboarding flows to reduce friction and improve conversion",
-      "Explored and implemented branded app elements, including custom iconography and UI components",
-      "Supported the design system and interaction patterns to ensure consistency across features"
-    ],
-    "deliverables": [
-      "Complete Figma file of app flows, wireframes, and UI designs (to be embedded)",
-      "Custom icon sets and branded visual elements",
-      "User journey maps and annotated onboarding screens",
-      "Collaboration with marketing for in-app moments and dynamic social features"
-    ],
-    "impact": [
-      "Improved onboarding conversion and user retention with data-backed design iterations",
-      "Created a cohesive visual and interaction language across the app",
-      "Enhanced the platform's social features to boost engagement"
-    ],
-    "tags": [
-      "Product Design",
-      "UX/UI",
-      "User Journey",
-      "Onboarding Flows",
-      "Custom Icon Design",
-      "Design Systems",
-      "Figma"
-    ]
-  },
-  {
-    "id": 10,
-    "tag": "ux/ui",
-    "asssets": [
-      {
-        "type": "figma",
-        "url": "https://embed.figma.com/design/x2fNy5ppY4YfR8JvdArf7L/Potion---For-Portfolio?node-id=0-1&embed-host=share"
-      }
-    ],
-    "project_title": "Potion • Front-End Design for Freelance CRM",
-    "client": "Potion (Freelance CRM platform empowering creatives)",
-    "overview": "Potion is a CRM platform tailored to freelance creatives, helping streamline client outreach, project workflows, and video prospecting through AI-driven personalization. I led the full front-end UX and visual experience—from initial wireframes to final hi-fi designs—shaping the user energy and interaction flows to feel intuitive, polished, and true to their brand identity.",
-    "contribution": [
-      "Designed UX flows, wireframes, and high-fidelity mockups for core features including onboarding, dashboard views, client outreach tools, and video personalization interfaces",
-      "Crafted a branded UI kit featuring buttons, cards, modals, and micro‑interactions to reflect Potion's bold, creative positioning",
-      "Provided detailed interaction specs and documentation to support a seamless handoff to engineering"
-    ],
-    "deliverables": [
-      "Full set of UX wireframes and polished screens across key user flows",
-      "Branded UI component library and interactive standards",
-      "Developer-ready design files with annotations for interactivity and responsive behavior"
-    ],
-    "impact": [
-      "Created a cohesive front-end design tailored to how freelance creatives work and sell",
-      "Captured Potion's creative energy through visual and interactive consistency",
-      "Enabled scalable future updates with a structured approach to design and documentation"
-    ],
-    "tags": [
-      "Product Design",
-      "UX/UI",
-      "Wireframing",
-      "Front-End Design",
-      "Interaction Design",
-      "CRM",
-      "Freelance",
-      "AI Personalization"
-    ]
-  },
-  {
-    "id": 11,
-    "tag": "ux/ui",
-    "asssets": [
-      {
-        "type": "figma",
-        "url": "https://embed.figma.com/design/iDc4N9Gtq620XtMzJSbiOk/SAAS-PROJECT---External?node-id=3901-12774&embed-host=share"
-      }
-    ],
-    "project_title": "Ascend • CRM Platform and Backend Development",
-    "client": "Ascend (Private Label Press Acquisition Platform)",
-    "overview": "Ascend is a platform that allows businesses and individuals to purchase a la carte press placements. We were brought in to design and build the entire backend of their portal, focusing on creating a seamless and intuitive experience for both internal teams and users. This included deep research into user flows, iterative feedback implementation, and designing a system optimized for scalability and ease of management.",
-    "contribution": [
-      "Led backend architecture and UX design for the platform's admin and client dashboards",
-      "Conducted user flow research and incorporated feedback loops to refine usability",
-      "Designed all interface components and logic for content submission, tracking, and fulfillment"
-    ],
-    "deliverables": [
-      "Full backend portal design, including user and admin dashboards",
-      "Wireframes, user journeys, and interactive prototypes",
-      "Scalable backend structure aligned with Ascend's press acquisition model"
-    ],
-    "impact": [
-      "Streamlined the press placement process with an intuitive, self-service backend",
-      "Improved operational efficiency for internal teams managing client campaigns",
-      "Delivered a robust, scalable platform that supports future expansion"
-    ],
-    "tags": [
-      "CRM Design",
-      "Backend Architecture",
-      "UX Research",
-      "Wireframing",
-      "Admin Dashboards",
-      "SaaS Platform"
-    ]
-  },
-  {
-    "id": 12,
-    "tag": "ux/ui",
-    "asssets": [
-      {
-        "type": "figma",
-        "url": "https://embed.figma.com/design/BB0iFPjcesunPWnJzZiyJH/Untitled?node-id=0-1&embed-host=share"
-      }
-    ],
-    "project_title": "Voomio • Multichain NFT Marketplace Design",
-    "client": "Voomio (Multichain NFT marketplace)",
-    "overview": "Voomio is a multichain NFT marketplace designed to simplify NFT discovery and trading across multiple blockchains. We led the entire front-end design journey, bringing structure to new territory during the platform's two-year development cycle. Given the novelty of cross-chain NFT experiences at the time, this was a rigorous, iterative process that combined UX work, brand identity, interaction design, and highly detailed wireframing to shape a future-ready product.",
-    "contribution": [
-      "Led UX flow design, screen wireframes, and high-fidelity UI for multi-curve components (minting, discovery, commerce)",
-      "Defined and refined front-end architecture to handle multichain detail without compromising user simplicity",
-      "Developed brand identity and UI aesthetics tailored to a novel NFT ecosystem",
-      "Continued two-year iteration cycles based on live testing, feedback, and evolving cross-chain functionality"
-    ],
-    "deliverables": [
-      "Wireframes, flows, and interaction specs for multi-chain NFT experiences",
-      "High-fidelity UI libraries aligned with brand system and responsive across devices",
-      "Brand identity and typography package suited for web3 positioning",
-      "Front-end design files and documentation for developers"
-    ],
-    "impact": [
-      "Built a scalable front-end framework for an emerging multichain marketplace",
-      "Aligned design with blockchain complexity while maintaining clarity and usability",
-      "Supported a two-year product roadmap through disciplined iteration and feedback loops"
-    ],
-    "tags": [
-      "Multichain",
-      "NFT Marketplace",
-      "UX Architecture",
-      "Front-End Design",
-      "Brand Identity",
-      "Web3",
-      "Interaction Design",
-      "Iterative Process"
-    ]
-  },
-  {
-    "id": 13,
     "tag": "strategy",
     "asssets": [
       {
@@ -497,7 +344,7 @@
     ]
   },
   {
-    "id": 14,
+    "id": 10,
     "tag": "strategy",
     "asssets": [
       {
@@ -548,7 +395,7 @@
     ]
   },
   {
-    "id": 15,
+    "id": 11,
     "tag": "strategy",
     "asssets": [
       {
@@ -615,7 +462,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 12,
     "tag": "strategy",
     "asssets": [
       {
@@ -651,7 +498,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 13,
     "tag": "strategy",
     "asssets": [
       {
@@ -697,7 +544,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 14,
     "tag": "strategy",
     "asssets": [
       {
@@ -737,7 +584,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 15,
     "tag": "strategy",
     "asssets": [
       {
@@ -784,7 +631,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 16,
     "tag": "go-to-market",
     "asssets": [
       {
@@ -822,7 +669,7 @@
     ]
   },
   {
-    "id": 21,
+    "id": 17,
     "tag": "go-to-market",
     "asssets": [
       {
@@ -860,7 +707,7 @@
     ]
   },
   {
-    "id": 22,
+    "id": 18,
     "tag": "go-to-market",
     "asssets": [
       {
@@ -908,6 +755,159 @@
       "Brand Engagement",
       "ConsenSys",
       "Linea"
+    ]
+  },
+  {
+    "id": 19,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "FIGMA_URL_TO_BE_ADDED"
+      }
+    ],
+    "project_title": "Betr • Product Design & Social Dynamics",
+    "client": "Betr (Sports Betting & Fantasy Startup)",
+    "overview": "At Betr, I worked across product design, user journey mapping, and onboarding flow optimization while also shaping the social dynamics of the platform. I collaborated closely with the product and engineering teams to ensure that every branded element, from in-app visuals to custom iconography, reflected the brand's identity and performance goals. My role blended UX strategy with visual design to create an intuitive, engaging user experience.",
+    "contribution": [
+      "Designed and refined user journeys, from sign-up to first bet and retention",
+      "Built and optimized onboarding flows to reduce friction and improve conversion",
+      "Explored and implemented branded app elements, including custom iconography and UI components",
+      "Supported the design system and interaction patterns to ensure consistency across features"
+    ],
+    "deliverables": [
+      "Complete Figma file of app flows, wireframes, and UI designs (to be embedded)",
+      "Custom icon sets and branded visual elements",
+      "User journey maps and annotated onboarding screens",
+      "Collaboration with marketing for in-app moments and dynamic social features"
+    ],
+    "impact": [
+      "Improved onboarding conversion and user retention with data-backed design iterations",
+      "Created a cohesive visual and interaction language across the app",
+      "Enhanced the platform's social features to boost engagement"
+    ],
+    "tags": [
+      "Product Design",
+      "UX/UI",
+      "User Journey",
+      "Onboarding Flows",
+      "Custom Icon Design",
+      "Design Systems",
+      "Figma"
+    ]
+  },
+  {
+    "id": 20,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/x2fNy5ppY4YfR8JvdArf7L/Potion---For-Portfolio?node-id=0-1&embed-host=share"
+      }
+    ],
+    "project_title": "Potion • Front-End Design for Freelance CRM",
+    "client": "Potion (Freelance CRM platform empowering creatives)",
+    "overview": "Potion is a CRM platform tailored to freelance creatives, helping streamline client outreach, project workflows, and video prospecting through AI-driven personalization. I led the full front-end UX and visual experience—from initial wireframes to final hi-fi designs—shaping the user energy and interaction flows to feel intuitive, polished, and true to their brand identity.",
+    "contribution": [
+      "Designed UX flows, wireframes, and high-fidelity mockups for core features including onboarding, dashboard views, client outreach tools, and video personalization interfaces",
+      "Crafted a branded UI kit featuring buttons, cards, modals, and micro‑interactions to reflect Potion's bold, creative positioning",
+      "Provided detailed interaction specs and documentation to support a seamless handoff to engineering"
+    ],
+    "deliverables": [
+      "Full set of UX wireframes and polished screens across key user flows",
+      "Branded UI component library and interactive standards",
+      "Developer-ready design files with annotations for interactivity and responsive behavior"
+    ],
+    "impact": [
+      "Created a cohesive front-end design tailored to how freelance creatives work and sell",
+      "Captured Potion's creative energy through visual and interactive consistency",
+      "Enabled scalable future updates with a structured approach to design and documentation"
+    ],
+    "tags": [
+      "Product Design",
+      "UX/UI",
+      "Wireframing",
+      "Front-End Design",
+      "Interaction Design",
+      "CRM",
+      "Freelance",
+      "AI Personalization"
+    ]
+  },
+  {
+    "id": 21,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/iDc4N9Gtq620XtMzJSbiOk/SAAS-PROJECT---External?node-id=3901-12774&embed-host=share"
+      }
+    ],
+    "project_title": "Ascend • CRM Platform and Backend Development",
+    "client": "Ascend (Private Label Press Acquisition Platform)",
+    "overview": "Ascend is a platform that allows businesses and individuals to purchase a la carte press placements. We were brought in to design and build the entire backend of their portal, focusing on creating a seamless and intuitive experience for both internal teams and users. This included deep research into user flows, iterative feedback implementation, and designing a system optimized for scalability and ease of management.",
+    "contribution": [
+      "Led backend architecture and UX design for the platform's admin and client dashboards",
+      "Conducted user flow research and incorporated feedback loops to refine usability",
+      "Designed all interface components and logic for content submission, tracking, and fulfillment"
+    ],
+    "deliverables": [
+      "Full backend portal design, including user and admin dashboards",
+      "Wireframes, user journeys, and interactive prototypes",
+      "Scalable backend structure aligned with Ascend's press acquisition model"
+    ],
+    "impact": [
+      "Streamlined the press placement process with an intuitive, self-service backend",
+      "Improved operational efficiency for internal teams managing client campaigns",
+      "Delivered a robust, scalable platform that supports future expansion"
+    ],
+    "tags": [
+      "CRM Design",
+      "Backend Architecture",
+      "UX Research",
+      "Wireframing",
+      "Admin Dashboards",
+      "SaaS Platform"
+    ]
+  },
+  {
+    "id": 22,
+    "tag": "ux/ui",
+    "asssets": [
+      {
+        "type": "figma",
+        "url": "https://embed.figma.com/design/BB0iFPjcesunPWnJzZiyJH/Untitled?node-id=0-1&embed-host=share"
+      }
+    ],
+    "project_title": "Voomio • Multichain NFT Marketplace Design",
+    "client": "Voomio (Multichain NFT marketplace)",
+    "overview": "Voomio is a multichain NFT marketplace designed to simplify NFT discovery and trading across multiple blockchains. We led the entire front-end design journey, bringing structure to new territory during the platform's two-year development cycle. Given the novelty of cross-chain NFT experiences at the time, this was a rigorous, iterative process that combined UX work, brand identity, interaction design, and highly detailed wireframing to shape a future-ready product.",
+    "contribution": [
+      "Led UX flow design, screen wireframes, and high-fidelity UI for multi-curve components (minting, discovery, commerce)",
+      "Defined and refined front-end architecture to handle multichain detail without compromising user simplicity",
+      "Developed brand identity and UI aesthetics tailored to a novel NFT ecosystem",
+      "Continued two-year iteration cycles based on live testing, feedback, and evolving cross-chain functionality"
+    ],
+    "deliverables": [
+      "Wireframes, flows, and interaction specs for multi-chain NFT experiences",
+      "High-fidelity UI libraries aligned with brand system and responsive across devices",
+      "Brand identity and typography package suited for web3 positioning",
+      "Front-end design files and documentation for developers"
+    ],
+    "impact": [
+      "Built a scalable front-end framework for an emerging multichain marketplace",
+      "Aligned design with blockchain complexity while maintaining clarity and usability",
+      "Supported a two-year product roadmap through disciplined iteration and feedback loops"
+    ],
+    "tags": [
+      "Multichain",
+      "NFT Marketplace",
+      "UX Architecture",
+      "Front-End Design",
+      "Brand Identity",
+      "Web3",
+      "Interaction Design",
+      "Iterative Process"
     ]
   }
 ]
