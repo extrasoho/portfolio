@@ -399,12 +399,12 @@
     "tag": "strategy",
     "asssets": [
       {
-        "type": "image",
-        "url": "https://7mcoofq3ojzokjqj.public.blob.vercel-storage.com/15-1F37C334-5F72-4ABA-8236-2081B692CE5E_1_105_c.jpeg"
-      },
-      {
         "type": "video",
         "url": "https://7mcoofq3ojzokjqj.public.blob.vercel-storage.com/15-20210408__R4__BOMBAY%20BILL%20NYE%20-%20SCRIPT_01_FINAL.mp4"
+      },
+      {
+        "type": "image",
+        "url": "https://7mcoofq3ojzokjqj.public.blob.vercel-storage.com/15-1F37C334-5F72-4ABA-8236-2081B692CE5E_1_105_c.jpeg"
       },
       {
         "type": "video",
