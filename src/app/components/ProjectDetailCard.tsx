@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 // types
 import { IProject } from "@/types/interface";
@@ -13,44 +14,106 @@ interface ProjectDetailCardProps {
 }
 
 const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
+  const [currentAssetIndex, setCurrentAssetIndex] = useState(0);
+
   const renderMedia = () => {
     if (!project.asssets || project.asssets.length === 0) return null;
 
-    const asset = project.asssets[0];
-    if (asset.type === "video") {
-      return (
-        <video
-          src={asset.url}
-          loop
-          preload="auto"
-          playsInline
-          autoPlay
-          muted
-          controls
-          className="w-full rounded-lg"
-        />
+    const asset = project.asssets[currentAssetIndex];
+    const hasMultipleAssets = project.asssets.length > 1;
+
+    const handlePrevious = () => {
+      setCurrentAssetIndex((prev) =>
+        prev === 0 ? project.asssets.length - 1 : prev - 1
       );
-    } else if (asset.type === "image") {
-      return (
-        <Image
-          src={asset.url}
-          alt={project.project_title}
-          width={800}
-          height={600}
-          className="h-auto w-full rounded-lg"
-        />
+    };
+
+    const handleNext = () => {
+      setCurrentAssetIndex((prev) =>
+        prev === project.asssets.length - 1 ? 0 : prev + 1
       );
-    } else if (asset.type === "figma") {
-      return (
-        <iframe
-          src={asset.url}
-          width="800"
-          height="450"
-          className="w-full rounded-lg"
-        />
-      );
-    }
-    return null;
+    };
+
+    const renderCurrentAsset = () => {
+      if (asset.type === "video") {
+        return (
+          <video
+            src={asset.url}
+            loop
+            preload="auto"
+            playsInline
+            autoPlay
+            muted
+            controls
+            className="w-full rounded-lg"
+          />
+        );
+      } else if (asset.type === "image") {
+        return (
+          <Image
+            src={asset.url}
+            alt={`${project.project_title} - Asset ${currentAssetIndex + 1}`}
+            width={800}
+            height={600}
+            className="h-auto w-full rounded-lg"
+          />
+        );
+      } else if (asset.type === "figma") {
+        return (
+          <iframe
+            src={asset.url}
+            width="800"
+            height="450"
+            className="w-full rounded-lg"
+          />
+        );
+      }
+      return null;
+    };
+
+    return (
+      <div className="relative">
+        {renderCurrentAsset()}
+
+        {/* Navigation buttons - only show if multiple assets */}
+        {hasMultipleAssets && (
+          <>
+            {/* Previous button */}
+            <motion.button
+              onClick={handlePrevious}
+              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-black bg-[#F57E07] p-2 shadow-[2px_2px_0px_0px_rgb(0,0,0)] transition-all duration-200 hover:scale-110 hover:bg-orange-600"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.2 }}
+              aria-label="Previous asset"
+            >
+              <div className="flex h-4 w-4 items-center justify-center">
+                <div className="h-0 w-0 border-t-[4px] border-r-[6px] border-b-[4px] border-t-transparent border-r-black border-b-transparent"></div>
+              </div>
+            </motion.button>
+
+            {/* Next button */}
+            <motion.button
+              onClick={handleNext}
+              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-black bg-[#F57E07] p-2 shadow-[2px_2px_0px_0px_rgb(0,0,0)] transition-all duration-200 hover:scale-110 hover:bg-orange-600"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.2 }}
+              aria-label="Next asset"
+            >
+              <div className="flex h-4 w-4 items-center justify-center">
+                <div className="h-0 w-0 border-t-[4px] border-b-[4px] border-l-[6px] border-t-transparent border-b-transparent border-l-black"></div>
+              </div>
+            </motion.button>
+
+            {/* Asset counter */}
+            <div className="absolute right-2 bottom-2 rounded-full border border-black bg-[#F9F1E4] px-2 py-1 text-xs font-bold shadow-[1px_1px_0px_0px_rgb(0,0,0)]">
+              {currentAssetIndex + 1} / {project.asssets.length}
+            </div>
+          </>
+        )}
+      </div>
+    );
   };
 
   const renderBulletPoint = (text: string, index: number) => (
