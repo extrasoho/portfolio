@@ -18,17 +18,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   // Get the first asset (assuming one asset per project for now)
   const asset = project.asssets?.[0];
 
-  // Control video playback based on hover state
-  useEffect(() => {
-    if (videoRef.current && asset?.type === "video") {
-      if (isHovered) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  }, [isHovered, asset?.type]);
-
   if (!asset) {
     return null; // Don't render if no asset
   }
@@ -46,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           ref={videoRef}
           src={asset.url}
           className="h-full w-full object-cover"
-          autoPlay={false}
+          autoPlay={true}
           muted
           loop
           playsInline
