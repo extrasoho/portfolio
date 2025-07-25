@@ -67,10 +67,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
             : "-translate-x-1/2 translate-y-full opacity-0"
         }`}
       >
-        <h3 className="mb-1 text-center text-sm font-bold text-white">
+        <h3 className="mb-1 text-left text-sm font-bold text-white">
           {project.project_title}
         </h3>
-        <p className="text-center text-xs text-white">{project.client}</p>
+        <p className="text-left text-xs text-white">{project.client}</p>
       </div>
     </div>
   );
