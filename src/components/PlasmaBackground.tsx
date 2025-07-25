@@ -26,15 +26,15 @@ const PlasmaBackground: React.FC = () => {
         .gradient {
           position: absolute;
           border-radius: 100%;
-          opacity: 0.6;
+          opacity: 0.14;
           mix-blend-mode: screen;
           animation-iteration-count: infinite;
           animation-timing-function: cubic-bezier(0.1, 0, 0.9, 1);
         }
 
         .gradient-1 {
-          background: rgb(255, 0, 0) none repeat scroll 0% 0% / auto padding-box
-            border-box;
+          background: rgb(238, 161, 22) none repeat scroll 0% 0% / auto
+            padding-box border-box;
           width: 700px;
           height: 700px;
           animation-duration: 11s;
@@ -46,8 +46,8 @@ const PlasmaBackground: React.FC = () => {
         }
 
         .gradient-2 {
-          background: rgb(0, 255, 0) none repeat scroll 0% 0% / auto padding-box
-            border-box;
+          background: rgb(202, 107, 22) none repeat scroll 0% 0% / auto
+            padding-box border-box;
           width: 600px;
           height: 600px;
           animation-duration: 11s;
