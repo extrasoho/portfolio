@@ -11,11 +11,11 @@ const LINKEDIN_ICON = "/icons/linkedin.svg";
 
 export default function ProfileCard() {
   return (
-    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
+    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
       {/* Top: Avatar and Name/Title */}
       <div className="flex items-start gap-4">
         {/* Avatar */}
-        <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-500">
+        <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-400">
           <Image
             src={AVATAR_URL}
             alt="Alejandro avatar"
@@ -30,7 +30,7 @@ export default function ProfileCard() {
         <div className="flex h-full w-full flex-col justify-between">
           <Button
             variant="outline"
-            className="ml-auto flex cursor-pointer items-center justify-center rounded-lg border border-gray-500 bg-transparent p-2 transition hover:bg-transparent"
+            className="ml-auto flex cursor-pointer items-center justify-center rounded-lg border border-gray-400 bg-transparent p-2 transition hover:bg-transparent"
             aria-label="LinkedIn"
             onClick={() =>
               window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer")

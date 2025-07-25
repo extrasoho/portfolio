@@ -122,7 +122,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             {/* Previous button */}
             <motion.button
               onClick={handlePrevious}
-              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
+              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-400 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
@@ -136,7 +136,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             {/* Next button */}
             <motion.button
               onClick={handleNext}
-              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
+              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-400 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
@@ -148,7 +148,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             </motion.button>
 
             {/* Asset counter */}
-            <div className="absolute right-2 bottom-2 rounded-full border border-gray-500 bg-transparent px-2 py-1 text-xs font-bold text-white backdrop-blur-md">
+            <div className="absolute right-2 bottom-2 rounded-full border border-gray-400 bg-transparent px-2 py-1 text-xs font-bold text-white backdrop-blur-md">
               {currentAssetIndex + 1} / {project.asssets.length}
             </div>
           </>
@@ -165,13 +165,13 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
     >
-      <div className="mt-1 h-4 w-4 flex-shrink-0 rounded-full border border-gray-500 bg-transparent"></div>
+      <div className="mt-1.5 h-3 w-3 flex-shrink-0 rounded-full border-2 border-white bg-transparent"></div>
       <p className="text-lg leading-6 font-normal text-white">{text}</p>
     </motion.div>
   );
 
   return (
-    <div className="relative w-full rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
+    <div className="relative w-full rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
       {/* Close Button */}
       {onClose && (
         <motion.div
@@ -184,7 +184,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             onClick={onClose}
             size="icon"
             variant="outline"
-            className="h-6 w-6 rounded-full border-gray-500 bg-transparent transition-all duration-200 hover:scale-110 hover:border-gray-500 hover:bg-transparent"
+            className="h-6 w-6 rounded-full border-gray-400 bg-transparent transition-all duration-200 hover:scale-110 hover:border-gray-400 hover:bg-transparent"
             aria-label="Close"
           >
             <div className="flex h-4 w-4 items-center justify-center">
@@ -290,7 +290,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
           {project.tags.map((tag, index) => (
             <motion.div
               key={index}
-              className="rounded-xl border border-gray-500 bg-transparent px-2 pb-1"
+              className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2, delay: 0.4 + index * 0.05 }}

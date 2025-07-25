@@ -34,14 +34,14 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="flex w-full flex-col rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
+    <div className="flex w-full flex-col rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
       {/* Close Button */}
       {onClose && (
         <div className="mb-4 flex justify-end">
           <Button
             variant="destructive"
             size="icon"
-            className="h-8 w-8 rounded-full border border-gray-500 bg-transparent text-white hover:bg-transparent"
+            className="h-8 w-8 rounded-full border border-gray-400 bg-transparent text-white hover:bg-transparent"
             onClick={onClose}
             aria-label="Close"
           >
@@ -69,7 +69,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             placeholder="Name"
             value={formData.name}
             onChange={handleInputChange}
-            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
+            className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
@@ -86,7 +86,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             placeholder="Email"
             value={formData.email}
             onChange={handleInputChange}
-            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
+            className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
@@ -103,7 +103,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             value={formData.message}
             onChange={handleInputChange}
             rows={4}
-            className="resize-vertical w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
+            className="resize-vertical w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
@@ -112,7 +112,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
         <div className="mt-2">
           <Button
             type="submit"
-            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
+            className="w-full rounded-lg border border-gray-400 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
           >
             Submit
           </Button>
