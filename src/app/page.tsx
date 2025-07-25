@@ -51,8 +51,8 @@ export default function Home() {
             activeFilter={activeFilter}
             onFilterChange={handleFilterChange}
           />
-          <Ticker />
-          <div className="flex h-full w-full flex-col gap-4 overflow-visible">
+
+          <div className="relative flex h-full w-full flex-col gap-4 overflow-visible">
             <AnimatePresence mode="wait">
               {selectedProject && (
                 <motion.div
@@ -114,6 +114,9 @@ export default function Home() {
                   />
                 </div>
               ))}
+            </div>
+            <div className="sticky right-4 bottom-0 left-4 z-10">
+              <Ticker />
             </div>
           </div>
         </div>
