@@ -105,12 +105,12 @@ const Ticker: React.FC<ITickerProps> = ({
           {extendedImages.map((image, index) => (
             <div key={`${image.id}-${index}`} className="px-4">
               <div className="flex h-16 w-full items-center justify-center">
-                <div className="relative h-12 w-24 md:h-16 md:w-32">
+                <div className="relative h-12 w-16 md:h-16 md:w-24">
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={128}
-                    height={128}
+                    width={100}
+                    height={100}
                     className="h-full w-full object-contain transition-transform duration-300 ease-in-out hover:scale-110"
                     style={{
                       filter: "drop-shadow(2px 2px 4px rgba(0,0,0,0.1))",
