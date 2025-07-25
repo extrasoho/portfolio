@@ -12,6 +12,11 @@ interface ContactCardProps {
 
 const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -20,6 +25,11 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
 
   const toggleOpen = () => {
     setIsOpen(!isOpen);
+    // Reset form and status when closing
+    if (isOpen) {
+      setSubmitStatus({ type: null, message: "" });
+      setFormData({ name: "", email: "", message: "" });
+    }
   };
 
   const handleInputChange = (
@@ -30,13 +40,49 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
       ...prev,
       [name]: value,
     }));
+    // Clear status when user starts typing again
+    if (submitStatus.type) {
+      setSubmitStatus({ type: null, message: "" });
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-    // You can integrate with your form handling service here
+    setIsLoading(true);
+    setSubmitStatus({ type: null, message: "" });
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: "success",
+          message: "Thank you! Your message has been sent successfully.",
+        });
+        // Reset form after successful submission
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus({
+          type: "error",
+          message: data.error || "Something went wrong. Please try again.",
+        });
+      }
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "Network error. Please check your connection and try again.",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -90,6 +136,21 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
               exit={{ y: -10 }}
               transition={{ duration: 0.2, delay: 0.1 }}
             >
+              {/* Status Messages */}
+              {submitStatus.type && (
+                <motion.div
+                  initial={{ opacity: 0, y: -10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className={`mt-4 rounded-lg p-3 text-sm font-medium ${
+                    submitStatus.type === "success"
+                      ? "border border-green-600 bg-green-900/50 text-green-200"
+                      : "border border-red-600 bg-red-900/50 text-red-200"
+                  }`}
+                >
+                  {submitStatus.message}
+                </motion.div>
+              )}
+
               <form
                 onSubmit={handleSubmit}
                 className="mt-4 flex flex-col gap-2"
@@ -109,8 +170,9 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
                     placeholder="Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white placeholder:text-gray-400 focus:border-white"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -129,8 +191,9 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
                     placeholder="Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white placeholder:text-gray-400 focus:border-white"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -149,8 +212,9 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
                     value={formData.message}
                     onChange={handleInputChange}
                     rows={4}
-                    className="resize-vertical w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    className="resize-vertical w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white placeholder:text-gray-400 focus:border-white"
                     required
+                    disabled={isLoading}
                   />
                 </div>
 
@@ -158,9 +222,17 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
                 <div className="mt-2">
                   <Button
                     type="submit"
-                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
+                    disabled={isLoading}
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 font-semibold text-white transition-colors hover:bg-white hover:text-black disabled:cursor-not-allowed disabled:opacity-50"
                   >
-                    Submit
+                    {isLoading ? (
+                      <div className="flex items-center justify-center gap-2">
+                        <div className="h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
+                        Sending...
+                      </div>
+                    ) : (
+                      "Send Message"
+                    )}
                   </Button>
                 </div>
               </form>
