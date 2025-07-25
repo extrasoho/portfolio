@@ -63,6 +63,41 @@ export default function ProfileCard() {
         a high-output agency responsible for campaigns, animation and content
         for major cultural figures and technology partners.
       </p>
+      <p className="text-xs leading-snug text-white">
+        Creative Director with over 8+ years of experience leading
+        multidisciplinary teams across branding, product design, marketing and
+        emerging technology. Recognized for driving impactful storytelling and
+        digital innovation through recognized creative leadership. Built and led
+        a high-output agency responsible for campaigns, animation and content
+        for major cultural figures and technology partners.
+      </p>
+      <div className="flex flex-wrap gap-3">
+        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+          <span className="text-xs font-bold text-white">
+            Creative Director
+          </span>
+        </div>
+        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+          <span className="text-xs font-bold text-white">
+            Creative Director
+          </span>
+        </div>
+        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+          <span className="text-xs font-bold text-white">
+            Creative Director
+          </span>
+        </div>
+        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+          <span className="text-xs font-bold text-white">
+            Creative Director
+          </span>
+        </div>
+        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+          <span className="text-xs font-bold text-white">
+            Creative Director
+          </span>
+        </div>
+      </div>
     </div>
   );
 }
