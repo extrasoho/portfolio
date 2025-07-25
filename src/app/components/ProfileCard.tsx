@@ -9,6 +9,15 @@ const LINKEDIN_URL = "https://www.linkedin.com/in/corpusalejandro/";
 const LINKEDIN_ICON = "/icons/linkedin.svg";
 
 export default function ProfileCard() {
+  // Define skills/tags array
+  const skills = [
+    "Creative Director",
+    "Product Design",
+    "Brand Strategy",
+    "Digital Innovation",
+    "Team Leadership",
+  ];
+
   return (
     <div className="flex min-h-0 w-full flex-1 flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
       {/* Top: Avatar and Name/Title */}
@@ -52,53 +61,55 @@ export default function ProfileCard() {
         </div>
       </div>
       {/* Description */}
-      <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-hidden">
+      <div className="flex min-h-0 flex-1 flex-col gap-4">
         <div className="flex-1 overflow-hidden">
-          <div className="flex flex-col gap-4">
-            <p className="text-sm text-white">
-              Creative Director with over 8+ years of experience leading
-              multidisciplinary teams across branding, product design, marketing
-              and emerging technology. Recognized for driving impactful
-              storytelling and digital innovation through recognized creative
-              leadership. Built and led a high-output agency responsible for
-              campaigns, animation and content for major cultural figures and
-              technology partners.
-            </p>
-            <p className="text-sm text-white">
-              Creative Director with over 8+ years of experience leading
-              multidisciplinary teams across branding, product design, marketing
-              and emerging technology. Recognized for driving impactful
-              storytelling and digital innovation through recognized creative
-              leadership. Built and led a high-output agency responsible for
-              campaigns, animation and content for major cultural figures and
-              technology partners.
-            </p>
+          <div className="flex h-full flex-col justify-between gap-4">
+            <div className="flex flex-col gap-4">
+              <p className="text-sm text-white">
+                Creative Director with over 8+ years of experience leading
+                multidisciplinary teams across branding, product design,
+                marketing and emerging technology. Recognized for driving
+                impactful storytelling and digital innovation through recognized
+                creative leadership. Built and led a high-output agency
+                responsible for campaigns, animation and content for major
+                cultural figures and technology partners.
+              </p>
+              <p className="text-sm text-white">
+                Creative Director with over 8+ years of experience leading
+                multidisciplinary teams across branding, product design,
+                marketing and emerging technology. Recognized for driving
+                impactful storytelling and digital innovation through recognized
+                creative leadership. Built and led a high-output agency
+                responsible for campaigns, animation and content for major
+                cultural figures and technology partners.
+              </p>
+              <p className="text-sm text-white">
+                Creative Director with over 8+ years of experience leading
+                multidisciplinary teams across branding, product design,
+                marketing and emerging technology. Recognized for driving
+                impactful storytelling and digital innovation through recognized
+                creative leadership. Built and led a high-output agency
+                responsible for campaigns, animation and content for major
+                cultural figures and technology partners.
+              </p>
+            </div>
             <div className="flex flex-wrap gap-3">
-              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-                <span className="text-xs font-bold text-white">
-                  Creative Director
-                </span>
-              </div>
-              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-                <span className="text-xs font-bold text-white">
-                  Creative Director
-                </span>
-              </div>
-              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-                <span className="text-xs font-bold text-white">
-                  Creative Director
-                </span>
-              </div>
-              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-                <span className="text-xs font-bold text-white">
-                  Creative Director
-                </span>
-              </div>
-              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-                <span className="text-xs font-bold text-white">
-                  Creative Director
-                </span>
-              </div>
+              {(() => {
+                const skillElements = [];
+                for (let i = 0; i < skills.length; i++) {
+                  skillElements.push(
+                    <div
+                      key={i}
+                      className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1"
+                    >
+                      <span className="text-xs font-bold text-white">
+                        {skills[i]}
+                      </span>
+                    </div>
+                  );
+                }
+                return skillElements;
+              })()}
             </div>
           </div>
         </div>
