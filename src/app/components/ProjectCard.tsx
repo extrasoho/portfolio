@@ -72,7 +72,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
 
       {/* Hover Overlay */}
       <div
-        className={`absolute bottom-4 left-1/2 flex h-[70px] w-[90%] transform flex-col items-center justify-center rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg transition-all duration-300 ease-in-out ${
+        className={`absolute bottom-4 left-1/2 flex h-auto min-h-[70px] w-[90%] transform flex-col items-center justify-center rounded-xl border border-gray-500 bg-black/70 p-4 backdrop-blur-lg transition-all duration-300 ease-in-out ${
           isHovered
             ? "-translate-x-1/2 translate-y-0 opacity-100"
             : "-translate-x-1/2 translate-y-full opacity-0"
