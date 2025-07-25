@@ -37,38 +37,38 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
     const renderCurrentAsset = () => {
       if (asset.type === "video") {
         return (
-          <video
-            src={asset.url}
-            loop
-            preload="auto"
-            playsInline
-            autoPlay
-            muted
-            controls
-            className="w-full rounded-lg"
-          />
+          <div className="aspect-video w-full overflow-hidden rounded-lg">
+            <video
+              src={asset.url}
+              loop
+              preload="auto"
+              playsInline
+              autoPlay
+              muted
+              controls
+              className="h-full w-full object-cover"
+            />
+          </div>
         );
       } else if (asset.type === "image") {
         return (
-          <Image
-            src={asset.url}
-            alt={`${project.project_title} - Asset ${currentAssetIndex + 1}`}
-            width={800}
-            height={600}
-            className="h-auto w-full rounded-lg"
-            draggable={false}
-            onDragStart={(e) => e.preventDefault()}
-            style={{ userSelect: "none" }}
-          />
+          <div className="aspect-video w-full overflow-hidden rounded-lg">
+            <Image
+              src={asset.url}
+              alt={`${project.project_title} - Asset ${currentAssetIndex + 1}`}
+              fill
+              className="object-cover"
+              draggable={false}
+              onDragStart={(e) => e.preventDefault()}
+              style={{ userSelect: "none" }}
+            />
+          </div>
         );
       } else if (asset.type === "figma") {
         return (
-          <iframe
-            src={asset.url}
-            width="800"
-            height="450"
-            className="w-full rounded-lg"
-          />
+          <div className="aspect-video w-full overflow-hidden rounded-lg">
+            <iframe src={asset.url} className="h-full w-full" />
+          </div>
         );
       }
       return null;
