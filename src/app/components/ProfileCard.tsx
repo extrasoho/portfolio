@@ -12,11 +12,11 @@ const LINKEDIN_ICON =
 
 export default function ProfileCard() {
   return (
-    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-black bg-[#F9F1E4] p-4 shadow-[3px_3px_0px_0px_rgb(0,0,0)]">
+    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4">
       {/* Top: Avatar and Name/Title */}
       <div className="flex items-start gap-4">
         {/* Avatar */}
-        <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-black/10">
+        <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-500">
           <Image
             src={AVATAR_URL}
             alt="Alejandro avatar"
@@ -31,7 +31,7 @@ export default function ProfileCard() {
         <div className="flex h-full w-full flex-col justify-between">
           <Button
             variant="outline"
-            className="ml-auto flex cursor-pointer items-center justify-center rounded-lg border border-black bg-[#CBC1B0] p-2 transition hover:bg-[#B5AB98]"
+            className="ml-auto flex cursor-pointer items-center justify-center rounded-lg border border-gray-500 bg-transparent p-2 transition hover:bg-transparent"
             aria-label="LinkedIn"
             onClick={() =>
               window.open(LINKEDIN_URL, "_blank", "noopener,noreferrer")
@@ -46,17 +46,17 @@ export default function ProfileCard() {
             />
           </Button>
           <div className="flex flex-col gap-1">
-            <span className="text-[22px] leading-tight font-bold">
+            <span className="text-[22px] leading-tight font-bold text-white">
               Alejandro
             </span>
-            <span className="text-md font-normal text-gray-700">
+            <span className="text-md font-normal text-white">
               Creative Director
             </span>
           </div>
         </div>
       </div>
       {/* Description */}
-      <p className="text-xs leading-snug text-gray-800">
+      <p className="text-xs leading-snug text-white">
         Creative Director with over 8+ years of experience leading
         multidisciplinary teams across branding, product design, marketing and
         emerging technology. Recognized for driving impactful storytelling and

@@ -34,14 +34,14 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="flex w-full flex-col rounded-xl border border-black bg-[#F9F1E4] p-4 shadow-[3px_3px_0px_0px_rgb(0,0,0)]">
+    <div className="flex w-full flex-col rounded-xl border border-gray-500 bg-transparent p-4">
       {/* Close Button */}
       {onClose && (
         <div className="mb-4 flex justify-end">
           <Button
             variant="destructive"
             size="icon"
-            className="h-8 w-8 rounded-full border border-black bg-[#F57E07] hover:bg-[#E06D06]"
+            className="h-8 w-8 rounded-full border border-gray-500 bg-transparent text-white hover:bg-transparent"
             onClick={onClose}
             aria-label="Close"
           >
@@ -52,14 +52,14 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
 
       {/* Contact Title */}
       <div className="mb-4">
-        <label className="text-[22px] font-bold">Contact</label>
+        <label className="text-[22px] font-bold text-white">Contact</label>
       </div>
 
       {/* Contact Form */}
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
         {/* Name Field */}
         <div className="flex flex-col gap-1">
-          <label htmlFor="name" className="text-xs font-bold">
+          <label htmlFor="name" className="text-xs font-bold text-white">
             Your Name
           </label>
           <Input
@@ -69,14 +69,14 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             placeholder="Name"
             value={formData.name}
             onChange={handleInputChange}
-            className="w-full rounded-lg border border-black bg-transparent p-3 text-base"
+            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
 
         {/* Email Field */}
         <div className="flex flex-col gap-1">
-          <label htmlFor="email" className="text-xs font-bold">
+          <label htmlFor="email" className="text-xs font-bold text-white">
             Your Email Address
           </label>
           <Input
@@ -86,14 +86,14 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             placeholder="Email"
             value={formData.email}
             onChange={handleInputChange}
-            className="w-full rounded-lg border border-black bg-transparent p-3 text-base"
+            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
 
         {/* Message Field */}
         <div className="flex flex-col gap-1">
-          <label htmlFor="message" className="text-xs font-bold">
+          <label htmlFor="message" className="text-xs font-bold text-white">
             Your Message
           </label>
           <Textarea
@@ -103,7 +103,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
             value={formData.message}
             onChange={handleInputChange}
             rows={4}
-            className="resize-vertical w-full rounded-lg border border-black bg-transparent p-3 text-base"
+            className="resize-vertical w-full rounded-lg border border-gray-500 bg-transparent p-3 text-base text-white"
             required
           />
         </div>
@@ -112,7 +112,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
         <div className="mt-2">
           <Button
             type="submit"
-            className="w-full rounded-lg border-none bg-[#F57E07] p-3 font-semibold text-black hover:bg-[#E06D06]"
+            className="w-full rounded-lg border border-gray-500 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
           >
             Submit
           </Button>

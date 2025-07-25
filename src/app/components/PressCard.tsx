@@ -6,14 +6,14 @@ import { Button } from "@/components/ui/button";
 
 const PressCard: React.FC = () => {
   return (
-    <div className="flex w-full flex-col gap-4 rounded-xl border border-black bg-[#F9F1E4] p-4 shadow-[3px_3px_0px_0px_rgb(0,0,0)]">
+    <div className="flex w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4">
       <div className="flex flex-col gap-4">
         {/* Press Button - Using shadcn/ui Button */}
         <div className="w-full">
           <Button
             variant="secondary"
             size="sm"
-            className="h-[22px] w-[82px] cursor-pointer rounded-full border border-black bg-[#CBC1B0] text-xs font-bold tracking-wide text-black uppercase hover:bg-[#B5AB98]"
+            className="h-[22px] w-[82px] cursor-pointer rounded-full border border-gray-500 bg-transparent text-xs font-bold tracking-wide text-white uppercase hover:bg-transparent"
           >
             Press
           </Button>
@@ -24,7 +24,7 @@ const PressCard: React.FC = () => {
           {/* Adweek Button */}
           <Button
             variant="outline"
-            className="flex h-9 w-full items-center justify-center rounded-lg border border-black bg-transparent hover:bg-gray-50"
+            className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-500 bg-transparent hover:bg-transparent"
             onClick={() =>
               window.open(
                 "https://www.adweek.com/",
@@ -45,7 +45,7 @@ const PressCard: React.FC = () => {
           {/* Deadline Button */}
           <Button
             variant="outline"
-            className="flex h-9 w-full items-center justify-center rounded-lg border border-black bg-transparent hover:bg-gray-50"
+            className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-500 bg-transparent hover:bg-transparent"
             onClick={() =>
               window.open(
                 "https://deadline.com/",
@@ -66,7 +66,7 @@ const PressCard: React.FC = () => {
           {/* Adage Button */}
           <Button
             variant="outline"
-            className="flex h-9 w-full items-center justify-center rounded-lg border border-black bg-transparent hover:bg-gray-50"
+            className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-500 bg-transparent hover:bg-transparent"
             onClick={() =>
               window.open("https://adage.com/", "_blank", "noopener,noreferrer")
             }

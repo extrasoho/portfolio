@@ -88,16 +88,16 @@ const Ticker: React.FC<ITickerProps> = ({
   if (images.length === 0) {
     return (
       <div
-        className={`flex h-auto w-full items-center justify-center rounded-xl border border-black bg-[#F9F1E4] shadow-[3px_3px_0px_0px_rgb(0,0,0)] ${className}`}
+        className={`flex h-auto w-full items-center justify-center rounded-xl border border-gray-500 bg-transparent ${className}`}
       >
-        <p className="text-gray-600">No images to display</p>
+        <p className="text-white">No images to display</p>
       </div>
     );
   }
 
   return (
     <div
-      className={`relative min-h-16 w-full overflow-hidden rounded-xl border border-black bg-[#F9F1E4] shadow-[3px_3px_0px_0px_rgb(0,0,0)] ${className} px-4`}
+      className={`relative min-h-16 w-full overflow-hidden rounded-xl border border-gray-500 bg-transparent ${className} px-4`}
     >
       {/* Slick Slider Container */}
       <div className="h-16 w-full">
