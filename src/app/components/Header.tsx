@@ -49,7 +49,7 @@ const Header = ({ activeFilter, onFilterChange }: HeaderProps) => {
           onClick={() => onFilterChange(filter.tag)}
           variant="outline"
           size="sm"
-          className={`h-[22px] rounded-full border border-gray-400 px-4 text-xs font-bold tracking-tight transition-all duration-200 ease-in-out hover:scale-105 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none ${filter.color} ${filter.textColor} ${activeFilter === filter.tag ? "ring-2 ring-white ring-offset-2 ring-offset-gray-800" : ""} `}
+          className={`h-[22px] rounded-full border border-gray-400 px-4 text-xs font-bold tracking-tight transition-all duration-200 ease-in-out hover:scale-105 focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 focus:outline-none ${filter.color} ${filter.textColor} ${activeFilter === filter.tag ? "bg-gray-400 ring-2 ring-white ring-offset-2 ring-offset-gray-800" : ""} `}
         >
           {filter.name}
         </Button>
