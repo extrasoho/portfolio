@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -70,71 +71,103 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
         </Button>
       </div>
 
-      {/* Collapsible Contact Form */}
-      {isOpen && (
-        <form onSubmit={handleSubmit} className="mt-4 flex flex-col gap-2">
-          {/* Name Field */}
-          <div className="flex flex-col gap-1">
-            <label htmlFor="name" className="text-xs font-bold text-white">
-              Your Name
-            </label>
-            <Input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Name"
-              value={formData.name}
-              onChange={handleInputChange}
-              className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
-              required
-            />
-          </div>
-
-          {/* Email Field */}
-          <div className="flex flex-col gap-1">
-            <label htmlFor="email" className="text-xs font-bold text-white">
-              Your Email Address
-            </label>
-            <Input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Email"
-              value={formData.email}
-              onChange={handleInputChange}
-              className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
-              required
-            />
-          </div>
-
-          {/* Message Field */}
-          <div className="flex flex-col gap-1">
-            <label htmlFor="message" className="text-xs font-bold text-white">
-              Your Message
-            </label>
-            <Textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              value={formData.message}
-              onChange={handleInputChange}
-              rows={4}
-              className="resize-vertical w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
-              required
-            />
-          </div>
-
-          {/* Submit Button */}
-          <div className="mt-2">
-            <Button
-              type="submit"
-              className="w-full rounded-lg border border-gray-400 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
+      {/* Animated Collapsible Contact Form */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{
+              duration: 0.3,
+              ease: [0.04, 0.62, 0.23, 0.98],
+            }}
+            className="overflow-hidden"
+          >
+            <motion.div
+              initial={{ y: -10 }}
+              animate={{ y: 0 }}
+              exit={{ y: -10 }}
+              transition={{ duration: 0.2, delay: 0.1 }}
             >
-              Submit
-            </Button>
-          </div>
-        </form>
-      )}
+              <form
+                onSubmit={handleSubmit}
+                className="mt-4 flex flex-col gap-2"
+              >
+                {/* Name Field */}
+                <div className="flex flex-col gap-1">
+                  <label
+                    htmlFor="name"
+                    className="text-xs font-bold text-white"
+                  >
+                    Your Name
+                  </label>
+                  <Input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    required
+                  />
+                </div>
+
+                {/* Email Field */}
+                <div className="flex flex-col gap-1">
+                  <label
+                    htmlFor="email"
+                    className="text-xs font-bold text-white"
+                  >
+                    Your Email Address
+                  </label>
+                  <Input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    required
+                  />
+                </div>
+
+                {/* Message Field */}
+                <div className="flex flex-col gap-1">
+                  <label
+                    htmlFor="message"
+                    className="text-xs font-bold text-white"
+                  >
+                    Your Message
+                  </label>
+                  <Textarea
+                    id="message"
+                    name="message"
+                    placeholder="Message"
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    rows={4}
+                    className="resize-vertical w-full rounded-lg border border-gray-400 bg-transparent p-3 text-base text-white"
+                    required
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <div className="mt-2">
+                  <Button
+                    type="submit"
+                    className="w-full rounded-lg border border-gray-400 bg-transparent p-3 font-semibold text-white hover:bg-transparent"
+                  >
+                    Submit
+                  </Button>
+                </div>
+              </form>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
