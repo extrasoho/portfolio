@@ -44,9 +44,7 @@ export default function ProfileCard() {
             />
           </Button>
           <div className="flex flex-col gap-1">
-            <span className="text-[22px] leading-tight font-bold text-white">
-              Alejandro
-            </span>
+            <span className="text-[22px] font-bold text-white">Alejandro</span>
             <span className="text-md font-normal text-white">
               Creative Director
             </span>
@@ -57,7 +55,7 @@ export default function ProfileCard() {
       <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-hidden">
         <div className="flex-1 overflow-hidden">
           <div className="flex flex-col gap-4">
-            <p className="text-xs leading-snug text-white">
+            <p className="text-sm text-white">
               Creative Director with over 8+ years of experience leading
               multidisciplinary teams across branding, product design, marketing
               and emerging technology. Recognized for driving impactful
@@ -66,7 +64,7 @@ export default function ProfileCard() {
               campaigns, animation and content for major cultural figures and
               technology partners.
             </p>
-            <p className="text-xs leading-snug text-white">
+            <p className="text-sm text-white">
               Creative Director with over 8+ years of experience leading
               multidisciplinary teams across branding, product design, marketing
               and emerging technology. Recognized for driving impactful

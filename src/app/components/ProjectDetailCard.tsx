@@ -165,8 +165,8 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.3, delay: index * 0.05 + 0.2 }}
     >
-      <div className="mt-1.5 h-3 w-3 flex-shrink-0 rounded-full border-2 border-white bg-transparent"></div>
-      <p className="text-lg leading-6 font-normal text-white">{text}</p>
+      <div className="mt-1 h-3 w-3 flex-shrink-0 rounded-full border-2 border-white bg-transparent"></div>
+      <p className="text-sm font-normal text-white">{text}</p>
     </motion.div>
   );
 
@@ -222,20 +222,18 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
 
       {/* Overview Section */}
       <motion.div
-        className="mb-6"
+        className="mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.2 }}
       >
         <h3 className="mb-4 text-lg font-bold text-white">Overview</h3>
-        <p className="text-lg leading-6 font-normal text-white">
-          {project.overview}
-        </p>
+        <p className="text-sm font-normal text-white">{project.overview}</p>
       </motion.div>
 
       {/* Two Column Layout for Contribution and Deliverable */}
       <motion.div
-        className="mb-6 grid grid-cols-1 gap-8 lg:grid-cols-2"
+        className="mb-4 grid grid-cols-1 gap-8 lg:grid-cols-2"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.25 }}
@@ -263,7 +261,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
 
       {/* Impact Section */}
       <motion.div
-        className="mb-6"
+        className="mb-4"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.3 }}
