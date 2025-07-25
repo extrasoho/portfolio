@@ -42,7 +42,7 @@ const Header = ({ activeFilter, onFilterChange }: HeaderProps) => {
   ];
 
   return (
-    <div className="z-10 flex h-14 min-h-14 w-full gap-4 overflow-auto rounded-xl border border-gray-500 bg-transparent p-4 lg:sticky lg:top-0">
+    <div className="z-10 flex h-14 min-h-14 w-full gap-4 overflow-auto rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg lg:sticky lg:top-0">
       {filters.map((filter) => (
         <Button
           key={filter.name}

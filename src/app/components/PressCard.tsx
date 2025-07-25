@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 const PressCard: React.FC = () => {
   return (
-    <div className="flex w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4">
+    <div className="flex w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
       <div className="flex flex-col gap-4">
         {/* Press Button - Using shadcn/ui Button */}
         <div className="w-full">

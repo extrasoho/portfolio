@@ -34,7 +34,7 @@ const ContactCard: React.FC<ContactCardProps> = ({ onClose }) => {
   };
 
   return (
-    <div className="flex w-full flex-col rounded-xl border border-gray-500 bg-transparent p-4">
+    <div className="flex w-full flex-col rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
       {/* Close Button */}
       {onClose && (
         <div className="mb-4 flex justify-end">

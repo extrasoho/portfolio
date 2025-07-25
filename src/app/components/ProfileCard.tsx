@@ -12,7 +12,7 @@ const LINKEDIN_ICON =
 
 export default function ProfileCard() {
   return (
-    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4">
+    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
       {/* Top: Avatar and Name/Title */}
       <div className="flex items-start gap-4">
         {/* Avatar */}

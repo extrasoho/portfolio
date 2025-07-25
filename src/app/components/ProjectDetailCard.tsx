@@ -122,7 +122,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             {/* Previous button */}
             <motion.button
               onClick={handlePrevious}
-              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 transition-all duration-200 hover:scale-110 hover:bg-transparent"
+              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
@@ -136,7 +136,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             {/* Next button */}
             <motion.button
               onClick={handleNext}
-              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 transition-all duration-200 hover:scale-110 hover:bg-transparent"
+              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-500 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.2 }}
@@ -148,7 +148,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             </motion.button>
 
             {/* Asset counter */}
-            <div className="absolute right-2 bottom-2 rounded-full border border-gray-500 bg-transparent px-2 py-1 text-xs font-bold text-white">
+            <div className="absolute right-2 bottom-2 rounded-full border border-gray-500 bg-transparent px-2 py-1 text-xs font-bold text-white backdrop-blur-md">
               {currentAssetIndex + 1} / {project.asssets.length}
             </div>
           </>
@@ -171,7 +171,7 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
   );
 
   return (
-    <div className="relative w-full rounded-xl border border-gray-500 bg-transparent p-4">
+    <div className="relative w-full rounded-xl border border-gray-500 bg-transparent p-4 backdrop-blur-lg">
       {/* Close Button */}
       {onClose && (
         <motion.div
