@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PlasmaBackground from "@/components/PlasmaBackground";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="scrollbar-hide">
-        <div className="flex min-h-screen flex-col">{children}</div>
+        <PlasmaBackground />
+        <div className="relative z-10 flex min-h-screen flex-col">
+          {children}
+        </div>
       </body>
     </html>
   );
