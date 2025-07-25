@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <div className="mx-auto h-screen max-w-[1440px] p-2 lg:p-4 xl:p-8">
       <div className="grid h-full grid-cols-7">
-        <aside className="col-span-7 flex h-full flex-col gap-4 md:sticky md:top-8 md:col-span-2">
+        <aside className="col-span-7 flex h-full max-h-full flex-col gap-4 overflow-hidden md:sticky md:top-8 md:col-span-2">
           <ProfileCard />
           <PressCard />
           <ContactCard />

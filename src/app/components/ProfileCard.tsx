@@ -11,9 +11,9 @@ const LINKEDIN_ICON = "/icons/linkedin.svg";
 
 export default function ProfileCard() {
   return (
-    <div className="flex h-full w-full flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
+    <div className="flex min-h-0 w-full flex-1 flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
       {/* Top: Avatar and Name/Title */}
-      <div className="flex items-start gap-4">
+      <div className="flex flex-shrink-0 items-start gap-4">
         {/* Avatar */}
         <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-400">
           <Image
@@ -55,47 +55,55 @@ export default function ProfileCard() {
         </div>
       </div>
       {/* Description */}
-      <p className="text-xs leading-snug text-white">
-        Creative Director with over 8+ years of experience leading
-        multidisciplinary teams across branding, product design, marketing and
-        emerging technology. Recognized for driving impactful storytelling and
-        digital innovation through recognized creative leadership. Built and led
-        a high-output agency responsible for campaigns, animation and content
-        for major cultural figures and technology partners.
-      </p>
-      <p className="text-xs leading-snug text-white">
-        Creative Director with over 8+ years of experience leading
-        multidisciplinary teams across branding, product design, marketing and
-        emerging technology. Recognized for driving impactful storytelling and
-        digital innovation through recognized creative leadership. Built and led
-        a high-output agency responsible for campaigns, animation and content
-        for major cultural figures and technology partners.
-      </p>
-      <div className="flex flex-wrap gap-3">
-        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-          <span className="text-xs font-bold text-white">
-            Creative Director
-          </span>
-        </div>
-        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-          <span className="text-xs font-bold text-white">
-            Creative Director
-          </span>
-        </div>
-        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-          <span className="text-xs font-bold text-white">
-            Creative Director
-          </span>
-        </div>
-        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-          <span className="text-xs font-bold text-white">
-            Creative Director
-          </span>
-        </div>
-        <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
-          <span className="text-xs font-bold text-white">
-            Creative Director
-          </span>
+      <div className="flex min-h-0 flex-1 flex-col gap-4 overflow-hidden">
+        <div className="flex-1 overflow-hidden">
+          <div className="flex flex-col gap-4">
+            <p className="text-xs leading-snug text-white">
+              Creative Director with over 8+ years of experience leading
+              multidisciplinary teams across branding, product design, marketing
+              and emerging technology. Recognized for driving impactful
+              storytelling and digital innovation through recognized creative
+              leadership. Built and led a high-output agency responsible for
+              campaigns, animation and content for major cultural figures and
+              technology partners.
+            </p>
+            <p className="text-xs leading-snug text-white">
+              Creative Director with over 8+ years of experience leading
+              multidisciplinary teams across branding, product design, marketing
+              and emerging technology. Recognized for driving impactful
+              storytelling and digital innovation through recognized creative
+              leadership. Built and led a high-output agency responsible for
+              campaigns, animation and content for major cultural figures and
+              technology partners.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+                <span className="text-xs font-bold text-white">
+                  Creative Director
+                </span>
+              </div>
+              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+                <span className="text-xs font-bold text-white">
+                  Creative Director
+                </span>
+              </div>
+              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+                <span className="text-xs font-bold text-white">
+                  Creative Director
+                </span>
+              </div>
+              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+                <span className="text-xs font-bold text-white">
+                  Creative Director
+                </span>
+              </div>
+              <div className="rounded-xl border border-gray-400 bg-transparent px-2 pb-1">
+                <span className="text-xs font-bold text-white">
+                  Creative Director
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
