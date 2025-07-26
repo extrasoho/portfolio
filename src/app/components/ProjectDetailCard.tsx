@@ -4,9 +4,12 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // types
-import { IProject } from "@/types/interface";
+import { IProject, IAsset } from "@/types/interface";
 
 interface ProjectDetailCardProps {
   project: IProject;
@@ -19,25 +22,13 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
   const renderMedia = () => {
     if (!project.asssets || project.asssets.length === 0) return null;
 
-    const asset = project.asssets[currentAssetIndex];
-    const hasMultipleAssets = project.asssets.length > 1;
-
-    const handlePrevious = () => {
-      setCurrentAssetIndex((prev) =>
-        prev === 0 ? project.asssets.length - 1 : prev - 1
-      );
-    };
-
-    const handleNext = () => {
-      setCurrentAssetIndex((prev) =>
-        prev === project.asssets.length - 1 ? 0 : prev + 1
-      );
-    };
-
-    const renderCurrentAsset = () => {
+    const renderAsset = (asset: IAsset, index: number) => {
       if (asset.type === "video") {
         return (
-          <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <div
+            key={index}
+            className="aspect-video w-full overflow-hidden rounded-lg"
+          >
             <video
               src={asset.url}
               loop
@@ -52,10 +43,13 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
         );
       } else if (asset.type === "image") {
         return (
-          <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <div
+            key={index}
+            className="relative aspect-video w-full overflow-hidden rounded-lg"
+          >
             <Image
               src={asset.url}
-              alt={`${project.project_title} - Asset ${currentAssetIndex + 1}`}
+              alt={`${project.project_title} - Asset ${index + 1}`}
               fill
               className="object-cover"
               draggable={false}
@@ -66,7 +60,10 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
         );
       } else if (asset.type === "figma") {
         return (
-          <div className="aspect-video w-full overflow-hidden rounded-lg">
+          <div
+            key={index}
+            className="aspect-video w-full overflow-hidden rounded-lg"
+          >
             <iframe src={asset.url} className="h-full w-full" />
           </div>
         );
@@ -74,85 +71,37 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
       return null;
     };
 
-    const handleDragEnd = (
-      event: MouseEvent | TouchEvent | PointerEvent,
-      {
-        offset,
-        velocity,
-      }: {
-        offset: { x: number; y: number };
-        velocity: { x: number; y: number };
-      }
-    ) => {
-      const swipeThreshold = 50;
-      const swipeVelocityThreshold = 500;
-
-      if (offset.x > swipeThreshold || velocity.x > swipeVelocityThreshold) {
-        // Swiped right - go to previous
-        handlePrevious();
-      } else if (
-        offset.x < -swipeThreshold ||
-        velocity.x < -swipeVelocityThreshold
-      ) {
-        // Swiped left - go to next
-        handleNext();
-      }
+    const sliderSettings = {
+      dots: project.asssets.length > 1,
+      infinite: project.asssets.length > 1,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: project.asssets.length > 1,
+      swipe: project.asssets.length > 1,
+      touchMove: project.asssets.length > 1,
+      beforeChange: (current: number, next: number) =>
+        setCurrentAssetIndex(next),
+      customPaging: (i: number) => (
+        <div className="mx-1 h-3 w-3 rounded-full bg-white/30 transition-colors duration-200 hover:bg-white/60" />
+      ),
+      dotsClass:
+        "slick-dots !flex !justify-center !items-center !bottom-4 !static mt-4",
     };
 
+    if (project.asssets.length === 1) {
+      return (
+        <div className="overflow-hidden rounded-lg">
+          {renderAsset(project.asssets[0], 0)}
+        </div>
+      );
+    }
+
     return (
-      <div className="relative overflow-hidden rounded-lg">
-        <motion.div
-          drag={hasMultipleAssets ? "x" : false}
-          dragConstraints={{ left: 0, right: 0 }}
-          dragElastic={0.2}
-          onDragEnd={handleDragEnd}
-          whileDrag={{ scale: 0.95 }}
-          className="cursor-grab select-none active:cursor-grabbing"
-          style={{
-            touchAction: hasMultipleAssets ? "pan-y" : "auto",
-            pointerEvents: "auto",
-          }}
-        >
-          {renderCurrentAsset()}
-        </motion.div>
-
-        {/* Navigation buttons - only show if multiple assets */}
-        {hasMultipleAssets && (
-          <>
-            {/* Previous button */}
-            <motion.button
-              onClick={handlePrevious}
-              className="absolute top-1/2 left-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-400 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.2 }}
-              aria-label="Previous asset"
-            >
-              <div className="flex h-4 w-4 items-center justify-center">
-                <div className="h-0 w-0 border-t-[4px] border-r-[6px] border-b-[4px] border-t-transparent border-r-white border-b-transparent"></div>
-              </div>
-            </motion.button>
-
-            {/* Next button */}
-            <motion.button
-              onClick={handleNext}
-              className="absolute top-1/2 right-2 -translate-y-1/2 cursor-pointer rounded-full border border-gray-400 bg-transparent p-2 backdrop-blur-md transition-all duration-200 hover:scale-110 hover:bg-transparent"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.2 }}
-              aria-label="Next asset"
-            >
-              <div className="flex h-4 w-4 items-center justify-center">
-                <div className="h-0 w-0 border-t-[4px] border-b-[4px] border-l-[6px] border-t-transparent border-b-transparent border-l-white"></div>
-              </div>
-            </motion.button>
-
-            {/* Asset counter */}
-            <div className="absolute right-2 bottom-2 rounded-full border border-gray-400 bg-transparent px-2 py-1 text-xs font-bold text-white backdrop-blur-md">
-              {currentAssetIndex + 1} / {project.asssets.length}
-            </div>
-          </>
-        )}
+      <div className="overflow-hidden rounded-lg">
+        <Slider {...sliderSettings}>
+          {project.asssets.map((asset, index) => renderAsset(asset, index))}
+        </Slider>
       </div>
     );
   };
