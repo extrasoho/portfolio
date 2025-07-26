@@ -52,18 +52,20 @@ export default function ProfileCard() {
               className="h-full w-full object-cover object-center"
             />
           </Button>
-          <div className="flex flex-col gap-1">
-            <span className="text-[22px] font-bold text-white">Alejandro</span>
-            <span className="text-md font-normal text-white">
-              Creative Director
-            </span>
-          </div>
         </div>
       </div>
       {/* Description */}
       <div className="flex min-h-0 flex-1 flex-col gap-4">
-        <div className="flex-1 overflow-hidden">
+        <div className="scrollbar-hide flex-1 overflow-auto">
           <div className="flex h-full flex-col justify-between gap-4">
+            <div className="flex flex-col gap-1">
+              <span className="text-[22px] font-bold text-white">
+                Alejandro
+              </span>
+              <span className="text-md font-normal text-white">
+                Creative Director
+              </span>
+            </div>
             <div className="flex flex-col gap-4">
               <p className="text-sm text-white">
                 Creative Director with over 8+ years of experience leading
