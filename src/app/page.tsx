@@ -52,7 +52,7 @@ export default function Home() {
             onFilterChange={handleFilterChange}
           />
 
-          <div className="relative flex h-full w-full flex-col gap-4 overflow-visible">
+          <div className="relative flex h-full w-full flex-col justify-between gap-4 overflow-visible">
             <AnimatePresence mode="wait">
               {selectedProject && (
                 <motion.div
