@@ -99,6 +99,11 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
 
     return (
       <div className="overflow-hidden rounded-lg">
+        <style>{`
+           .slick-dots .slick-active div {
+             background-color: rgba(255, 255, 255, 1) !important;
+           }
+         `}</style>
         <Slider {...sliderSettings}>
           {project.asssets.map((asset, index) => renderAsset(asset, index))}
         </Slider>
