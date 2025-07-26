@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -18,6 +18,19 @@ interface ProjectDetailCardProps {
 
 const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
   const [currentAssetIndex, setCurrentAssetIndex] = useState(0);
+  const videoRefs = useRef<Map<number, HTMLVideoElement>>(new Map());
+
+  // Handle video autoplay after component mounts to avoid hydration issues
+  useEffect(() => {
+    videoRefs.current.forEach((video) => {
+      if (video) {
+        video.play().catch((error) => {
+          // Silently handle autoplay failures (common in browsers)
+          console.log("Autoplay prevented:", error);
+        });
+      }
+    });
+  }, [project.asssets]);
 
   const renderMedia = () => {
     if (!project.asssets || project.asssets.length === 0) return null;
@@ -30,11 +43,17 @@ const ProjectDetailCard = ({ project, onClose }: ProjectDetailCardProps) => {
             className="aspect-video w-full overflow-hidden rounded-lg"
           >
             <video
+              ref={(el) => {
+                if (el) {
+                  videoRefs.current.set(index, el);
+                } else {
+                  videoRefs.current.delete(index);
+                }
+              }}
               src={asset.url}
               loop
               preload="auto"
               playsInline
-              autoPlay
               muted
               controls
               className="h-full w-full object-cover"

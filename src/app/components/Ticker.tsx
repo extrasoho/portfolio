@@ -105,7 +105,7 @@ const Ticker: React.FC<ITickerProps> = ({
           {extendedImages.map((image, index) => (
             <div key={`${image.id}-${index}`} className="px-4">
               <div className="flex h-16 w-full items-center justify-center">
-                <div className="relative h-12 w-16 md:h-16 md:w-24">
+                <div className="relative h-12 w-16 lg:h-16 lg:w-24">
                   <Image
                     src={image.src}
                     alt={image.alt}

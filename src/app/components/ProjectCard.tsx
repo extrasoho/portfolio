@@ -18,6 +18,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   // Get the first asset (assuming one asset per project for now)
   const asset = project.asssets?.[0];
 
+  // Handle video autoplay after component mounts to avoid hydration issues
+  useEffect(() => {
+    if (videoRef.current && asset?.type === "video") {
+      const video = videoRef.current;
+      video.play().catch((error) => {
+        // Silently handle autoplay failures (common in browsers)
+        console.log("Autoplay prevented:", error);
+      });
+    }
+  }, [asset?.type]);
+
   if (!asset) {
     return null; // Don't render if no asset
   }
@@ -35,7 +46,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
           ref={videoRef}
           src={asset.url}
           className="h-full w-full object-cover"
-          autoPlay={true}
           muted
           loop
           playsInline

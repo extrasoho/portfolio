@@ -19,7 +19,7 @@ export default function ProfileCard() {
   ];
 
   return (
-    <div className="flex min-h-0 w-full flex-1 flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg">
+    <div className="flex w-full flex-1 flex-col gap-4 rounded-xl border border-gray-400 bg-transparent p-4 backdrop-blur-lg lg:min-h-0">
       {/* Top: Avatar and Name/Title */}
       <div className="flex flex-shrink-0 items-start gap-4">
         {/* Avatar */}
@@ -58,15 +58,15 @@ export default function ProfileCard() {
       <div className="flex min-h-0 flex-1 flex-col gap-4">
         <div className="scrollbar-hide flex-1 overflow-auto">
           <div className="flex h-full flex-col justify-between gap-4">
-            <div className="flex flex-col gap-1">
-              <span className="text-[22px] font-bold text-white">
-                Alejandro
-              </span>
-              <span className="text-md font-normal text-white">
-                Creative Director
-              </span>
-            </div>
             <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-1">
+                <span className="text-[22px] font-bold text-white">
+                  Alejandro
+                </span>
+                <span className="text-md font-normal text-white">
+                  Creative Director
+                </span>
+              </div>
               <p className="text-sm text-white">
                 Creative Director with over 8+ years of experience leading
                 multidisciplinary teams across branding, product design,

@@ -38,14 +38,14 @@ export default function Home() {
   return (
     <div className="mx-auto h-screen max-w-[1440px] p-2 lg:p-4 xl:p-8">
       <div className="grid h-full grid-cols-7">
-        <aside className="col-span-7 flex h-full max-h-full flex-col gap-4 overflow-hidden md:sticky md:top-8 md:col-span-2">
+        <div className="col-span-7 flex h-full max-h-full flex-col gap-4 overflow-visible lg:sticky lg:top-8 lg:col-span-2 lg:overflow-hidden">
           <ProfileCard />
           <PressCard />
           <ContactCard />
-        </aside>
+        </div>
         <div
           ref={scrollContainerRef}
-          className="scrollbar-hide col-span-7 flex flex-col gap-4 overflow-visible px-0 py-4 md:col-span-5 md:overflow-y-auto lg:px-2 lg:py-0 xl:px-4"
+          className="scrollbar-hide col-span-7 flex flex-col gap-4 overflow-visible px-0 py-4 lg:col-span-5 lg:overflow-y-auto lg:px-2 lg:py-0 xl:px-4"
         >
           <Header
             activeFilter={activeFilter}
