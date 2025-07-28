@@ -30,8 +30,8 @@ export default function ProfileCard() {
             src={AVATAR_URL}
             alt="Alejandro avatar"
             className="h-full w-full rounded-lg object-cover object-center"
-            width={180}
-            height={180}
+            width={779}
+            height={1008}
           />
         </div>
 
