@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-const AVATAR_URL = "/avatar.png";
+const AVATAR_URL = "/avatar.jpg";
 const LINKEDIN_URL = "https://www.linkedin.com/in/corpusalejandro/";
 const LINKEDIN_ICON = "/icons/linkedin.svg";
 
