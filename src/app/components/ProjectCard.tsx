@@ -45,10 +45,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
         <video
           ref={videoRef}
           src={asset.url}
-          className="h-full w-full object-cover"
+          className="flex h-full w-full items-center justify-center object-cover"
           muted
           loop
           playsInline
+          preload="metadata"
+          poster="/icons/spinner-gray.svg"
         />
       ) : asset.type === "image" ? (
         <Image
