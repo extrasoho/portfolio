@@ -69,37 +69,44 @@ export default function ProfileCard() {
                   Creative Director
                 </span>
                 <p className="text-sm text-white">
-                  Creative Director with over 8+ years of experience leading
-                  multidisciplinary teams across branding, product design,
-                  marketing and emerging technology. Recognized for driving
-                  impactful storytelling and digital innovation through
-                  recognized creative leadership. Built and led a high-output
-                  agency responsible for campaigns, animation and content for
-                  major cultural figures and technology partners.
+                  Alejandro is a Creative Director with over eight years of
+                  experience driving impactful storytelling, product innovation,
+                  and design excellence for leading brands, tech startups, and
+                  cultural icons. He has led multidisciplinary teams across
+                  branding, product design, motion graphics, and marketing, with
+                  a focus on building scalable digital experiences. Alejandro
+                  founded and ran Unconfined (formerly Keithcity Group), a
+                  high-output creative agency responsible for award-winning
+                  campaigns, immersive content, and brand transformations for
+                  major clients across entertainment, fintech, and emerging
+                  technology.
                 </p>
               </div>
               {showMore && (
                 <div className="flex flex-col justify-between gap-4">
                   <>
                     <p className="text-sm text-white">
-                      Creative Director with over 8+ years of experience leading
-                      multidisciplinary teams across branding, product design,
-                      marketing and emerging technology. Recognized for driving
-                      impactful storytelling and digital innovation through
-                      recognized creative leadership. Built and led a
-                      high-output agency responsible for campaigns, animation
-                      and content for major cultural figures and technology
-                      partners.
+                      His work spans across notable companies and ventures,
+                      including leading front-end design and brand development
+                      at Betr, shaping the user experience for platforms like
+                      Clover, Eterna, Dorado, and Voomio, and creating standout
+                      creative for global brands like Bombay Sapphire, HBO’s
+                      Insecure, and Ethereum Merge NFTs. Alejandro’s work has
+                      been featured in mainstream media and industry outlets,
+                      including Forbes, Adweek, Hypebeast, and Complex,
+                      reflecting his ability to deliver cultural impact through
+                      innovative design and storytelling.
                     </p>
                     <p className="text-sm text-white">
-                      Creative Director with over 8+ years of experience leading
-                      multidisciplinary teams across branding, product design,
-                      marketing and emerging technology. Recognized for driving
-                      impactful storytelling and digital innovation through
-                      recognized creative leadership. Built and led a
-                      high-output agency responsible for campaigns, animation
-                      and content for major cultural figures and technology
-                      partners.
+                      With a strong foundation in architecture and design,
+                      Alejandro combines a meticulous eye for detail with a
+                      forward-thinking approach to product and brand strategy.
+                      Beyond his agency and product roles, he has collaborated
+                      with startups to develop go-to-market strategies, UX
+                      systems, and creative positioning that drive growth. A
+                      passionate horology enthusiast and admirer of vintage
+                      Porsche 911s, Alejandro brings both precision and artistry
+                      to every project he leads.
                     </p>
                   </>
                   <div className="flex flex-wrap gap-3">
