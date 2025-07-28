@@ -57,7 +57,7 @@ const PressCard: React.FC = () => {
                   className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-400 bg-transparent hover:bg-transparent"
                   onClick={() =>
                     window.open(
-                      "https://www.adweek.com/",
+                      "https://www.adweek.com/agencies/inside-the-6-person-creative-agency-that-brought-bill-nye-back/",
                       "_blank",
                       "noopener,noreferrer"
                     )
@@ -78,7 +78,7 @@ const PressCard: React.FC = () => {
                   className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-400 bg-transparent hover:bg-transparent"
                   onClick={() =>
                     window.open(
-                      "https://deadline.com/",
+                      "https://deadline.com/2021/06/keithcity-group-animation-tony-kaye-film-tremendum-marlon-brando-alejandro-corpus-1234784111/",
                       "_blank",
                       "noopener,noreferrer"
                     )
@@ -99,7 +99,7 @@ const PressCard: React.FC = () => {
                   className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-400 bg-transparent hover:bg-transparent"
                   onClick={() =>
                     window.open(
-                      "https://adage.com/",
+                      "https://adage.com/article/agency-news/real-cash-cow-and-insecure-inspired-scavenger-hunt-agency-brief/2391971/",
                       "_blank",
                       "noopener,noreferrer"
                     )
@@ -107,6 +107,27 @@ const PressCard: React.FC = () => {
                 >
                   <Image
                     src="/icons/adage.svg"
+                    alt="Adage"
+                    width={76}
+                    height={26}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </Button>
+
+                {/* Forbes Button */}
+                <Button
+                  variant="outline"
+                  className="flex h-9 w-full items-center justify-center rounded-lg border border-gray-400 bg-transparent hover:bg-transparent"
+                  onClick={() =>
+                    window.open(
+                      "https://www.forbes.com/sites/adammorganstern/2021/05/26/drinking-bombay-sapphire-with-bill-nye-the-science-guy/",
+                      "_blank",
+                      "noopener,noreferrer"
+                    )
+                  }
+                >
+                  <Image
+                    src="/icons/forbes.svg"
                     alt="Adage"
                     width={76}
                     height={26}
