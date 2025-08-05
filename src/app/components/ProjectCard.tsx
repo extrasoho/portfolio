@@ -13,6 +13,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isVideoLoading, setIsVideoLoading] = useState(true);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   // Get the first asset (assuming one asset per project for now)
@@ -20,14 +21,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
 
   // Handle video autoplay after component mounts to avoid hydration issues
   useEffect(() => {
-    if (videoRef.current && asset?.type === "video") {
-      const video = videoRef.current;
-      video.play().catch((error) => {
-        // Silently handle autoplay failures (common in browsers)
-        console.log("Autoplay prevented:", error);
-      });
+    if (asset?.type === "video") {
+      setIsVideoLoading(true); // Reset loading state when asset changes
+      if (videoRef.current) {
+        const video = videoRef.current;
+        video.play().catch((error) => {
+          // Silently handle autoplay failures (common in browsers)
+          console.log("Autoplay prevented:", error);
+        });
+      }
     }
-  }, [asset?.type]);
+  }, [asset?.type, asset?.url]);
 
   if (!asset) {
     return null; // Don't render if no asset
@@ -42,16 +46,32 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
     >
       {/* Asset Display */}
       {asset.type === "video" ? (
-        <video
-          ref={videoRef}
-          src={asset.url}
-          className="flex h-full w-full items-center justify-center object-cover"
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/icons/spinner-gray.svg"
-        />
+        <div className="relative h-full w-full">
+          <video
+            ref={videoRef}
+            src={asset.url}
+            className="h-full w-full object-cover"
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            onLoadStart={() => setIsVideoLoading(true)}
+            onCanPlay={() => setIsVideoLoading(false)}
+            onLoadedData={() => setIsVideoLoading(false)}
+          />
+          {/* Custom loading poster with controlled size */}
+          {isVideoLoading && (
+            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+              <Image
+                src="/icons/spinner-gray.svg"
+                alt="Loading..."
+                width={48}
+                height={48}
+                className="animate-spin"
+              />
+            </div>
+          )}
+        </div>
       ) : asset.type === "image" ? (
         <Image
           src={asset.url}

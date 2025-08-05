@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
-const AVATAR_URL = "/avatar.jpg";
+const AVATAR_URL = "/avatar.png";
 const LINKEDIN_URL = "https://www.linkedin.com/in/corpusalejandro/";
 const LINKEDIN_ICON = "/icons/linkedin.svg";
 
@@ -25,13 +25,13 @@ export default function ProfileCard() {
       {/* Top: Avatar and Name/Title */}
       <div className="flex flex-shrink-0 items-start gap-4">
         {/* Avatar */}
-        <div className="relative h-[180px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-400">
+        <div className="relative h-[200px] w-[180px] flex-shrink-0 overflow-hidden rounded-lg border border-gray-400">
           <Image
             src={AVATAR_URL}
             alt="Alejandro avatar"
             className="h-full w-full rounded-lg object-cover object-center"
-            width={779}
-            height={1008}
+            width={1024}
+            height={1363}
           />
         </div>
 
