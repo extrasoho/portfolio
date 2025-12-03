@@ -21,12 +21,12 @@ const Header = ({ activeFilter, onFilterChange }: HeaderProps) => {
       color: "bg-transparent",
       textColor: "text-white",
     },
-    {
-      name: "UX/UI",
-      tag: "ux/ui",
-      color: "bg-transparent",
-      textColor: "text-white",
-    },
+    // {
+    //   name: "UX/UI",
+    //   tag: "ux/ui",
+    //   color: "bg-transparent",
+    //   textColor: "text-white",
+    // },
     {
       name: "Strategy",
       tag: "strategy",
