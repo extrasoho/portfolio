@@ -47,28 +47,40 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, onClick }) => {
       {/* Asset Display */}
       {asset.type === "video" ? (
         <div className="relative h-full w-full">
-          <video
-            ref={videoRef}
-            src={asset.url}
-            className="h-full w-full object-cover"
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            onLoadStart={() => setIsVideoLoading(true)}
-            onCanPlay={() => setIsVideoLoading(false)}
-            onLoadedData={() => setIsVideoLoading(false)}
-          />
-          {/* Custom loading poster with controlled size */}
-          {isVideoLoading && (
-            <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
-              <Image
-                src="/icons/spinner-gray.svg"
-                alt="Loading..."
-                width={48}
-                height={48}
-                className="animate-spin"
+          {asset.thumb !== undefined ? (
+            <Image
+              src={asset.thumb || "/placeholder-image.png"}
+              alt={project.project_title}
+              className="h-full w-full object-cover"
+              width={400}
+              height={300}
+            />
+          ) : (
+            <div className="relative h-full w-full">
+              <video
+                ref={videoRef}
+                src={asset.url}
+                className="h-full w-full object-cover"
+                muted
+                loop
+                playsInline
+                preload="metadata"
+                onLoadStart={() => setIsVideoLoading(true)}
+                onCanPlay={() => setIsVideoLoading(false)}
+                onLoadedData={() => setIsVideoLoading(false)}
               />
+              {/* Custom loading poster with controlled size */}
+              {isVideoLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+                  <Image
+                    src="/icons/spinner-gray.svg"
+                    alt="Loading..."
+                    width={48}
+                    height={48}
+                    className="animate-spin"
+                  />
+                </div>
+              )}
             </div>
           )}
         </div>

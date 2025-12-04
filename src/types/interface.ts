@@ -1,6 +1,7 @@
 export interface IAsset {
   type: string;
   url: string;
+  thumb?: string;
 }
 
 export interface IProject {
